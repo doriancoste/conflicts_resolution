@@ -7,10 +7,27 @@ let load = fun fic_name ->
     try
       while true do
         let line = input_line fic in
-        print_string (String.concat "" [(line); "\n" ])
-          (* on affiche ici la ligne, mais il faudra modifier cette étape afin de traiter chaque ligne en remplissant des tableaux *)
+        (* print_string (String.concat "" [(line); "\n" ]); *)
+        (* la commande en commentaire affiche la ligne lue, mais il faudra modifier cette étape afin de traiter chaque ligne en remplissant des tableaux *)
+        (* le pattern matching suivant va a terme:
+            - afficher les différentes caractéristiques du fichier
+            - utiliser les données des nogoods pour remplir une matrice
+            - utiliser les données des coût pour remplir un tableau
+            - afficher un message si une ligne n'est pas comprise *)
           match line.[0] with
-          'd' -> Printf.printf "descriptif du fichier \n"
+          'd' ->
+            let data = String.split_on_char ' ' line in
+            let data = List.tl data in
+            Printf.printf "descriptif du fichier \n";
+            Printf.printf "number of aircrafts : %s \n" (List.hd data);
+            let data = List.tl data in
+            Printf.printf "number of maneuver : %s \n" (List.hd data);
+            let data = List.tl data in
+            Printf.printf "d0 max : %s \n" (List.hd data);
+            let data = List.tl data in
+            Printf.printf "d1 max : %s \n" (List.hd data);
+            let data = List.tl data in
+            Printf.printf "alpha max : %s \n" (List.hd data);
           | 'c' -> Printf.printf "nogoods \n"
           | 'm' -> Printf.printf "cost of maneuver \n"
           | lettre -> Printf.printf "Type de ligne inconnu : commence par %c \n" lettre
