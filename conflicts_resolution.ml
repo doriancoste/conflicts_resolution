@@ -18,7 +18,7 @@ let load = fun fic_name ->
           'd' ->
             let data = String.split_on_char ' ' line in
             let data = List.tl data in
-            Printf.printf "descriptif du fichier \n";
+            Printf.printf "descriptif du fichier: \n";
             Printf.printf "number of aircrafts : %s \n" (List.hd data);
             let data = List.tl data in
             Printf.printf "number of maneuver : %s \n" (List.hd data);
