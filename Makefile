@@ -11,9 +11,6 @@ byte: $(TARGET)
 $(TARGET): $(OBJS)
 	$(OCAMLC) -o $@ $^
 
-%.mli: %.ml
-	$(OCAMLC) -i $<
-
 %.cmi: %.mli
 	$(OCAMLC) $<
 
