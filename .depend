@@ -1,8 +1,11 @@
 load_data.cmo : load_data.cmi
 load_data.cmx : load_data.cmi
 load_data.cmi :
-modele.cmo :
-modele.cmx :
+modele.cmo : modele.cmi
+modele.cmx : modele.cmi
+modele.cmi :
 pqueue.cmo : pqueue.cmi
 pqueue.cmx : pqueue.cmi
 pqueue.cmi :
+solve.cmo : pqueue.cmi modele.cmi load_data.cmi
+solve.cmx : pqueue.cmx modele.cmx load_data.cmx
