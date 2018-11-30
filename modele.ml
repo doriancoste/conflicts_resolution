@@ -51,20 +51,10 @@ let is_empty_planes_left t =
   |a::b -> false
 ;;
 
-let create_reste t =
-  (*renvoie le nouveau sous-problème S'*)
-  ()
-;;
-
-let create_prime t =
-  (*renvoie le nouveau sous-problème Sreste*)
-  ()
-;;
-
 let filter = fun i s m->
-  (* 
+  (*
      m : bool array array array array
-     s : type t {compatible_maneuvers: int list array; planes_left: int list}  
+     s : type t {compatible_maneuvers: int list array; planes_left: int list}
      i : ième avion (int)
    *)
   let c_maneuvers = s.compatible_maneuvers in
@@ -72,7 +62,7 @@ let filter = fun i s m->
   let n = Array.length c_maneuvers in (* n planes in total*)
   let n_left = List.length p_left in
   let n_comp = n - n_left in (*nombre of planes compatible*)
-  
+
   (*jeme plane, maneuvres of jeme plane, one maneuvre of ieme plane, compatible or not, return compatible or not with j*)
   (*If there is no conflit, return true*)
   let rec j_match_rec = fun j list_j xi result->
@@ -86,7 +76,7 @@ let filter = fun i s m->
       else
         result
   in
-  
+
   (*one maneuvre of ieme plane, return compatible or not with all j in c_maneuvers *)
   (*If there is no conflit, return true*)
   let rec match_rec = fun xi->
@@ -94,9 +84,9 @@ let filter = fun i s m->
     for j=0 to n_comp -1 do
       result := !result && (j_match_rec j c_maneuvers.(j) xi true)
     done;
-    !result  
+    !result
   in
-  
+
   (*maneuvres of ieme plane, maneuvres compatible of ieme plane*)
   let rec filtre_rec = fun list_i result->
     match list_i with
@@ -107,6 +97,18 @@ let filter = fun i s m->
         else
           filtre_rec tail result
   in
-  filtre_rec c_maneuvers.(i) []
-    
-    
+  (* filtre_rec c_maneuvers.(i) [] *)
+
+(* Je met une valeur de retour bidon pour pouvoir compiler *)
+s
+
+
+
+
+
+
+let make = fun d_tot planes_left ->
+  {compatible_maneuvers = d_tot; planes_left = planes_left};;
+
+let get_priority = fun s cost ->
+  0 (* doit renvoyer la priorité du noeud s (majorant des fils) *)
