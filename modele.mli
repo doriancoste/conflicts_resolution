@@ -1,4 +1,4 @@
-type t = { compatible_maneuvers : int list array; planes_left : int list; };
+type t = { compatible_maneuvers : int list array; planes_left : int list };
 (**Type modèle, associé à une priorité et stocké dans la pqueue*)
 
 
@@ -7,7 +7,7 @@ exception EmptyPlanesLeftList
 
 val init: int array -> int -> t
 (**Crée le premier problème, avec (int array) les couts (qui donne
-   le nombre de manoeuvres et (int) le nombre d'avions. 
+   le nombre de manoeuvres et (int) le nombre d'avions.
    Ca commence à l'indice 0.*)
 
 val make : int list array -> int list -> t
@@ -16,17 +16,17 @@ val make : int list array -> int list -> t
 val get_compatible_maneuvers : t -> int -> int list
 (**Choppe le tabelau des maneuvres compatibles restantes
    pour l'avion i : Di *)
- 
+
 val head_compatible_maneuvers : t -> int -> int
-(**Choppe la première manoeuvre compatible de la liste. Renvoie 
+(**Choppe la première manoeuvre compatible de la liste. Renvoie
    l'exception EmptyCompatibleManeuvers si liste vide*)
 
 val tail_compatible_maneuvers : t -> int -> int list
- 
-(**Choppe les  manoeuvres compatible de la liste, avec la 
+
+(**Choppe les  manoeuvres compatible de la liste, avec la
    première en moins. Renvoie l'exception EmptyCompatibleManeuvers
    si liste vide*)
- 
+
 val del_i_planes_left : t -> int -> int list
 (**Supprime l'indice i dans la liste planes_left*)
 
@@ -44,5 +44,3 @@ val get_priority : t -> int array -> int
 
 val filter : int -> t -> bool array array array array -> t
 (**Enlève les manoeuvres incompatibles de l'avion i sur le t*)
-
-
