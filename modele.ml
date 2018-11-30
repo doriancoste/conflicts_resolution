@@ -5,6 +5,24 @@ type t =
 exception EmptyCompatibleManeuvers of int;;
 exception EmptyPlanesLeftList;;
 
+let create_list n f =
+  let rec creat_rec nombre list =
+    if (nombre = -1) then list else
+    creat_rec (nombre - 1) ((f nombre) :: list)
+  in
+  creat_rec n [];;
+
+
+let init couts n =
+  let nombre_de_manoeuvres = Array.length couts in
+  let liste_Di = List.init nombre_de_manoeuvres (fun i -> i) in
+  let a = Array.init n (fun _ -> liste_Di) in
+  let b = List.init n (fun i -> i) in
+  {compatible_maneuvers= a;
+   planes_left = b };;
+
+
+
 let get_compatible_maneuvers t i =
   t.compatible_maneuvers.(i);;
 
@@ -43,7 +61,7 @@ let create_prime t =
   ()
 ;;
 
-let filtre = fun i s m->
+let filter = fun i s m->
   (* 
      m : bool array array array array
      s : type t {compatible_maneuvers: int list array; planes_left: int list}  
