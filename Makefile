@@ -1,21 +1,30 @@
 SOURCES = load_data.ml
 TARGET = conflicts_resolution
 OCAMLC = ocamlc -g
+OCAMLOPT = ocamlopt -unsafe -inline 100
 DEP = ocamldep
 OBJS = $(SOURCES:.ml=.cmo)
+OBJS_OPT = $(SOURCES:.ml=.cmx)
 
-all: .depend byte
+all: .depend byte opt
 
 byte: $(TARGET)
+opt : $(TARGET).opt
 
 $(TARGET): $(OBJS)
 	$(OCAMLC) -o $@ $^
+
+$(TARGET).opt: $(OBJS_OPT)
+	$(OCAMLOPT) -o $@ $^
 
 %.cmi: %.mli
 	$(OCAMLC) $<
 
 %.cmo: %.ml
 	$(OCAMLC) -c $<
+
+%.cmx: %.ml
+	$(OCAMLOPT) -c $<
 
 .PHONY: clean
 
