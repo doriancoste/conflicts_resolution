@@ -41,3 +41,8 @@ val create_prime : t -> t
 
 val get_priority : t -> int array -> int
 (**Calcule la priorité associée à l'objet t*)
+
+val filter : int -> t -> bool array array array array -> t
+(**Enlève les manoeuvres incompatibles de l'avion i sur le t*)
+
+
