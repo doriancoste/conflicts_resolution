@@ -1,4 +1,4 @@
-SOURCES = load_data.ml
+SOURCES = load_data.ml pqueue.ml modele.ml solve.ml
 TARGET = conflicts_resolution
 OCAMLC = ocamlc -g
 OCAMLOPT = ocamlopt -unsafe -inline 100
