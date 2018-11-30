@@ -1,4 +1,4 @@
-SOURCES = conflicts_resolution.ml
+SOURCES = load.ml
 TARGET = conflicts_resolution
 OCAMLC = ocamlc -g
 DEP = ocamldep
