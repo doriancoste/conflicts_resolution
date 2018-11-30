@@ -1,5 +1,5 @@
 type t = { compatible_maneuvers : int list array; planes_left : int list; };
-(*Type modèle, associé à une priorité et stocké dans la pqueue*)
+(**Type modèle, associé à une priorité et stocké dans la pqueue*)
 
 
 exception EmptyCompatibleManeuvers of int
@@ -7,7 +7,11 @@ exception EmptyPlanesLeftList
 
 val init: int array -> int -> t
 (**Crée le premier problème, avec (int array) les couts (qui donne
-   le nombre de manoeuvres et (int) le nombre d'avions.*)
+   le nombre de manoeuvres et (int) le nombre d'avions. 
+   Ca commence à l'indice 0.*)
+
+val make : int list array -> int list -> t
+(** Cree le type t à partir de ses deux composantes*)
 
 val get_compatible_maneuvers : t -> int -> int list
 (**Choppe le tabelau des maneuvres compatibles restantes
