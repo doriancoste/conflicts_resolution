@@ -72,17 +72,8 @@ qui correspondent au carateristique du fichier de conflits  *)
         | lettre -> Printf.printf "Type de ligne inconnu : commence par %c \n" lettre;
       with End_of_file -> not_ended:= false;
     done);
-  (cost,no_conflict);;
+  (cost,no_conflict,!nb_planes);;
 
 
-let main () =
-  (** ce main est un test pour la fonction précédente, rien de définitif sur ses valeurs de retour **)
-  Printf.printf "loading data ...\n";
-  let (cost,no_conflict) = load "conflicts.txt" in
-  Printf.printf "data loaded\n cost=[";;
-
-
-
-main ();;
 
 (* ocamlc conflicts_resolution.ml -o conflicts_resolution dans le répertoire du fichier *)
