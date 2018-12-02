@@ -31,7 +31,10 @@ val is_empty_planes_left : t -> bool
 (**renvoie true si la liste des avions restants est vide*)
 
 val get_priority : t -> int array -> int
-(**Calcule la priorité associée à l'objet t*)
+(**Calcule la priorite associee à l'objet t a partir de la liste des couts
+   noeud s : type t
+   liste des couts cost : int array
+   valeur de retour : priorité: int **)
 
 val filter : int -> t -> bool array array array array -> t
 (**Enlève les manoeuvres incompatibles de l'avion i sur le t*)
