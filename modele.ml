@@ -13,10 +13,13 @@ let create_list n f =
   creat_rec n [];;
 
 
-let init couts n =
-  let nombre_de_manoeuvres = Array.length couts in
-  let liste_Di = List.init nombre_de_manoeuvres (fun i -> i) in
-  let a = Array.init n (fun _ -> liste_Di) in
+let init cost n =
+  let nombre_de_manoeuvres = Array.length cost in
+  let liste_di = List.init nombre_de_manoeuvres (fun i -> i) in
+
+  let liste_di_sorted = List.sort (fun i j -> cost.(i)-cost.(j)) liste_di in
+
+  let a = Array.init n (fun _ -> liste_di_sorted) in
   let b = List.init n (fun i -> i) in
   {compatible_maneuvers= a;
    planes_left = b };;
@@ -102,13 +105,24 @@ let filter = fun i s m->
 (* Je met une valeur de retour bidon pour pouvoir compiler *)
 s
 
-
-
-
-
-
 let make = fun d_tot planes_left ->
+  (*
+d_tot : int list array; d_tot.(i) contient la liste des maneuvres possibles au noeud s pour l'avion i
+planes_left : int list; planes_left contient les numeros d'avion qui n'ont pas encore eu de maneuvre attribuees
+retour : type t; represente un noeud
+*)
   {compatible_maneuvers = d_tot; planes_left = planes_left};;
 
 let get_priority = fun s cost ->
-  0 (* doit renvoyer la priorité du noeud s (majorant des fils) *)
+  (*
+s : type t; decrit un noeud
+cost : int Array ; cost.(i) contient le cout de la manoeuvre i
+retour : int; correspond au cout minimun que l'on peut obtenir a partir de s
+ *)
+  let domain = s.compatible_maneuvers in
+  let size = Array.length domain in
+  let priority = ref 0 in
+  (for i = 0 to size-1 do
+     priority := !priority + cost.(List.hd domain.(i));
+   done);
+  !priority
