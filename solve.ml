@@ -28,7 +28,7 @@ let () =
       let sr = Modele.make dr_tot s.planes_left in
       let s_no_filtered = Modele.make dnew_tot (List.tl s.planes_left) in
 
-      let s_new = Modele.filter plane_id s_no_filtered no_conflict in
+      let s_new = Modele.filter plane_id s_no_filtered no_conflict in      
 
       let new_q = Pqueue.insert (Modele.get_priority sr cost) sr q in
       let new_q = Pqueue.insert (Modele.get_priority s_new cost) s_new new_q in
@@ -36,6 +36,6 @@ let () =
 
   let maneuvers_sol,cost_tot = solve_rec q in
   Printf.printf "cout de la solution: %d\n" cost_tot;
-  for i=0 to nb_avion do
+  for i=0 to nb_avion-1 do
     Printf.printf "L'avion %d effectue la manoeuvre %d\n" i (List.hd maneuvers_sol.(i));
   done;;
