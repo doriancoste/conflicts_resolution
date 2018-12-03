@@ -38,7 +38,7 @@ let () =
 
       (* noeud de l'arbre contenant les branches ou plane_id effectue maneuver_of_id *)
       let s_no_filtered = Modele.make dnew_tot (List.tl s.planes_left) in
-      let s_new = Modele.filter plane_id maneuver_of_id s_no_filtered no_conflict in
+      let s_new = Modele.filter2 plane_id maneuver_of_id s_no_filtered no_conflict in
 
       (* on ajoute sr et s_new a la file q *)
       let new_q = Pqueue.insert (Modele.get_priority sr cost) sr q in
