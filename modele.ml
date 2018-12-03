@@ -52,36 +52,31 @@ let tail_compatible_maneuvers t i =
 
 let pop_planes_left t =
   match t.planes_left with
-  |a::b -> b
+   a::b -> b
   |[] -> raise EmptyPlanesLeftList
 ;;
 
 let is_empty_planes_left t =
   match t.planes_left with
-  |[] -> true
+   [] -> true
   |a::b -> false
 ;;
 
 let filter = fun i manoeuvrei s no_conflict ->
   let rec parcours_compat = fun dj compat j -> (*renvoie un Dj*)
-    match compat with 
-    |[] -> dj 
+    match compat with
+     [] -> dj
     |hd::tl -> if no_conflict.(i).(j).(manoeuvrei).(hd) = true then
         parcours_compat (List.append dj [hd]) tl j
     else parcours_compat dj tl j
   in
-  let rec parcours_planes = fun nouveau_tableau_des_Di planes  -> (*donne le tableau des Dj*)
+  let rec parcours_planes = fun nouveau_tableau_des_Di planes  -> (*donne le tableau des Di*)
     match planes with
     |[] -> nouveau_tableau_des_Di
-    |hd::tl -> parcours_planes (Array.append nouveau_tableau_des_Di  [|parcours_compat [] s.compatible_maneuvers.(hd) hd|]) tl  
+    |hd::tl -> parcours_planes (Array.append nouveau_tableau_des_Di  [|parcours_compat [] s.compatible_maneuvers.(hd) hd|]) tl
   in
-  make (parcours_planes [||] s.planes_left) s.planes_left 
+  make (parcours_planes [||] s.planes_left) s.planes_left
 
-
-
-
-
-    
 
 let get_priority = fun s cost ->
   (*
