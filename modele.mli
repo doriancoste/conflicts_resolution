@@ -36,5 +36,5 @@ val get_priority : t -> int array -> int
    liste des couts cost : int array
    valeur de retour : priorité: int **)
 
-val filter : int -> t -> bool array array array array -> t
-(**Enlève les manoeuvres incompatibles de l'avion i sur le t*)
+val filter : int -> int -> t -> bool array array array array -> t
+(**Enlève les manoeuvres imcompatibles pour tous les avions dans t.compatible_maneuvers en ayant donné : l'avion i (premier int) effectue la manoeuvre k (deuxième int). On teste grâce à no_conflict. *)

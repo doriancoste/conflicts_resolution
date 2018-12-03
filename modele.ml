@@ -10,17 +10,17 @@ let create_list n f =
     if (nombre = -1) then list else
     creat_rec (nombre - 1) ((f nombre) :: list)
   in
-  creat_rec n [];;
+  creat_rec (n-1) [];;
 
 
 let init cost n =
   let nombre_de_manoeuvres = Array.length cost in
-  let liste_di = List.init nombre_de_manoeuvres (fun i -> i) in
+  let liste_di = create_list nombre_de_manoeuvres (fun i -> i) in
 
   let liste_di_sorted = List.sort (fun i j -> cost.(i)-cost.(j)) liste_di in
 
   let a = Array.init n (fun _ -> liste_di_sorted) in
-  let b = List.init n (fun i -> i) in
+  let b = create_list n (fun i -> i) in
   {compatible_maneuvers= a;
    planes_left = b };;
 
@@ -54,7 +54,10 @@ let is_empty_planes_left t =
   |a::b -> false
 ;;
 
-let filter = fun i s m->
+
+let filter = fun i manoeuvrei s m ->
+
+(***let filter = fun i s m->
   (*
      m : bool array array array array
      s : type t {compatible_maneuvers: int list array; planes_left: int list}
@@ -100,7 +103,11 @@ let filter = fun i s m->
         else
           filtre_rec tail result
   in
-  filtre_rec c_maneuvers.(i) []
+  let new_list = filtre_rec c_maneuvers.(i) [] in
+  s.compatible_maneuvers.(i) = 	new_list;	
+  s***)
+
+
 
 let make = fun d_tot planes_left ->
   (*
