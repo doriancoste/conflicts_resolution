@@ -100,10 +100,7 @@ let filter = fun i s m->
         else
           filtre_rec tail result
   in
-  (* filtre_rec c_maneuvers.(i) [] *)
-
-(* Je met une valeur de retour bidon pour pouvoir compiler *)
-s
+  filtre_rec c_maneuvers.(i) []
 
 let make = fun d_tot planes_left ->
   (*
