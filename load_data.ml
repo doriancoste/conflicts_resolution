@@ -37,8 +37,8 @@ qui correspondent au carateristique du fichier de conflits  *)
   | lettre -> (Printf.printf "Type de premiere ligne inconnu : commence par %c \n" lettre));
 
   (* nous avons maintenant les dimension du probleme, on peut creer les elements cost et no_conflict que nous allons retourner *)
-  let cost = Array.make !nb_man 0 in
-  let no_conflict = Array.make !nb_planes (Array.make !nb_planes (Array.make !nb_man (Array.make !nb_man true))) in
+  let cost = Array.init !nb_man (fun _ -> 0) in
+  let no_conflict = Array.init !nb_planes (fun _ -> Array.init !nb_planes (fun _ -> Array.init !nb_man (fun _ -> Array.init !nb_man (fun _ -> true)))) in
 
   (* on parcourt ensuite le reste du fichier jusqu'a sa fin en remplissant les deux élement crée si dessus *)
   let not_ended = ref true in
