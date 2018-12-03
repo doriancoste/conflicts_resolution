@@ -24,6 +24,14 @@ let init cost n =
   {compatible_maneuvers= a;
    planes_left = b };;
 
+let make = fun d_tot planes_left ->
+  (*
+d_tot : int list array; d_tot.(i) contient la liste des maneuvres possibles au noeud s pour l'avion i
+planes_left : int list; planes_left contient les numeros d'avion qui n'ont pas encore eu de maneuvre attribuees
+retour : type t; represente un noeud
+*)
+  {compatible_maneuvers = d_tot; planes_left = planes_left};;
+
 
 
 let get_compatible_maneuvers t i =
@@ -54,68 +62,26 @@ let is_empty_planes_left t =
   |a::b -> false
 ;;
 
-
-let filter = fun i manoeuvrei s m ->
-
-(***let filter = fun i s m->
-  (*
-     m : bool array array array array
-     s : type t {compatible_maneuvers: int list array; planes_left: int list}
-     i : ième avion (int)
-   *)
-  let c_maneuvers = s.compatible_maneuvers in
-  let p_left = s.planes_left in
-  let n = Array.length c_maneuvers in (* n planes in total*)
-  let n_left = List.length p_left in
-  let n_comp = n - n_left in (*nombre of planes compatible*)
-
-  (*jeme plane, maneuvres of jeme plane, one maneuvre of ieme plane, compatible or not, return compatible or not with j*)
-  (*If there is no conflit, return true*)
-  let rec j_match_rec = fun j list_j xi result->
-    match list_j with
-      [] -> result
-    | xj::tail ->
-      let no_conflit = m.(i).(j).(xi).(xj) in
-      let result = (no_conflit && result) in
-      if (result = true) then
-        j_match_rec j tail xi result
-      else
-        result
+let filter = fun i manoeuvrei s no_conflict ->
+  let rec parcours_compat = fun dj compat j -> (*renvoie un Dj*)
+    match compat with 
+    |[] -> dj 
+    |hd::tl -> if no_conflict.(i).(j).(manoeuvrei).(hd) = true then
+        parcours_compat (List.append dj [hd]) tl j
+    else parcours_compat dj tl j
   in
-
-  (*one maneuvre of ieme plane, return compatible or not with all j in c_maneuvers *)
-  (*If there is no conflit, return true*)
-  let rec match_rec = fun xi->
-    let result  = ref true in
-    for j=0 to n_comp -1 do
-      result := !result && (j_match_rec j c_maneuvers.(j) xi true)
-    done;
-    !result
+  let rec parcours_planes = fun nouveau_tableau_des_Di planes  -> (*donne le tableau des Dj*)
+    match planes with
+    |[] -> nouveau_tableau_des_Di
+    |hd::tl -> parcours_planes (Array.append nouveau_tableau_des_Di  [|parcours_compat [] s.compatible_maneuvers.(hd) hd|]) tl  
   in
-
-  (*maneuvres of ieme plane, maneuvres compatible of ieme plane*)
-  let rec filtre_rec = fun list_i result->
-    match list_i with
-      [] -> result
-    | xi::tail ->
-        if (match_rec xi) then
-          filtre_rec tail (xi::result)
-        else
-          filtre_rec tail result
-  in
-  let new_list = filtre_rec c_maneuvers.(i) [] in
-  s.compatible_maneuvers.(i) = 	new_list;	
-  s***)
+  make (parcours_planes [||] s.planes_left) s.planes_left 
 
 
 
-let make = fun d_tot planes_left ->
-  (*
-d_tot : int list array; d_tot.(i) contient la liste des maneuvres possibles au noeud s pour l'avion i
-planes_left : int list; planes_left contient les numeros d'avion qui n'ont pas encore eu de maneuvre attribuees
-retour : type t; represente un noeud
-*)
-  {compatible_maneuvers = d_tot; planes_left = planes_left};;
+
+
+    
 
 let get_priority = fun s cost ->
   (*
