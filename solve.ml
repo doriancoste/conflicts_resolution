@@ -49,5 +49,5 @@ let () =
   let maneuvers_sol,cost_tot = solve_rec q in
   Printf.printf "cout de la solution: %d\n" cost_tot;
   for i=0 to nb_avion-1 do
-    Printf.printf "L'avion %d effectue la manoeuvre %d\n" i (List.hd maneuvers_sol.(i));
+    Printf.printf "L'avion %d effectue la manoeuvre %d\n" (i+1) (List.hd maneuvers_sol.(i));
   done;;

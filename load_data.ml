@@ -12,7 +12,7 @@ let load = fun fic_name ->
 
   (* cette partie ouvre le fichier texte donné en argument et creer les differentes reference dont on aura besoin,
      qui correspondent au carateristique du fichier de conflits  *)
-  Printf.printf "Loading data...";
+  Printf.printf "Loading data...\n";
   let fic = open_in fic_name in
   let nb_planes = ref 0 in
   let nb_man = ref 0 in
@@ -73,7 +73,7 @@ let load = fun fic_name ->
         | lettre -> Printf.printf "Type de ligne inconnu : commence par %c \n" lettre;
       with End_of_file -> not_ended:= false;
     done);
-  Printf.printf "Data loaded !";
+  Printf.printf "Data loaded !\n";
   (cost,no_conflict,!nb_planes);;
 
 
