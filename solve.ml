@@ -26,11 +26,11 @@ let () =
       let d_id = [maneuver_of_id] in
 
       (* tableau des domaines de maneuvres compatibles au cas plane_id n'effectue PAS maneuver_of_id *)
-      let dr_tot = d_tot in
+      let dr_tot = Array.copy d_tot in
       Array.set dr_tot plane_id dr_id;
 
       (* tableau des domaines de maneuvres compatibles au cas plane_id effectue maneuver_of_id *)
-      let dnew_tot = d_tot in
+      let dnew_tot = Array.copy d_tot in
       Array.set d_tot plane_id d_id;
 
       (* noeud de l'arbre contenant les branches ou plane_id n'effectue PAS maneuver_of_id *)
