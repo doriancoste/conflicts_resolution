@@ -2,9 +2,12 @@ let () =
   (* on charge d'abord le dichier du cluster puis on construit le sommet de l'arbre que l'on insert dans la file a priorite *)
   let fichier = "conflicts.txt" in
   let cost,no_conflict,nb_avion = Load_data.load fichier in
+  let start = Sys.time () in
   let s = Modele.init cost nb_avion in
-  let prio = Modele.get_priority s cost in
+  let prio = Priority.get_priority_1 s cost in
   let q = Pqueue.insert prio s Pqueue.empty in   (* Creer la file initiale *)
+
+
 
   (* on utilise une fonction récursive qui va depiler les elements de q jusqu'a trouver une solution, en ajoutant les voisin a q *)
   let rec solve_rec = fun q ->
@@ -38,16 +41,18 @@ let () =
 
       (* noeud de l'arbre contenant les branches ou plane_id effectue maneuver_of_id *)
       let s_no_filtered = Modele.make dnew_tot (List.tl s.planes_left) in
-      let s_new = Modele.filter2 plane_id maneuver_of_id s_no_filtered no_conflict in
+      let s_new = Modele.filter plane_id maneuver_of_id s_no_filtered no_conflict in
 
       (* on ajoute sr et s_new a la file q *)
-      let new_q = Pqueue.insert (Modele.get_priority sr cost) sr q in
-      let new_q = Pqueue.insert (Modele.get_priority s_new cost) s_new new_q in
+      let new_q = Pqueue.insert (Priority.get_priority_1 sr cost) sr q in
+      let new_q = Pqueue.insert (Priority.get_priority_1 s_new cost) s_new new_q in
       solve_rec new_q in
 
-  (* on appelle la fonction précédente pour obtenir la solution puis affichage de la solution *)
+  (* on appelle la fonction précédente pour obtenir la solution puis affichage de la solution et du temps d'execution *)
   let maneuvers_sol,cost_tot = solve_rec q in
-  Printf.printf "cout de la solution: %d\n" cost_tot;
-  for i=0 to nb_avion-1 do
-    Printf.printf "L'avion %d effectue la manoeuvre %d\n" (i+1) (List.hd maneuvers_sol.(i));
-  done;;
+  let passed_time = Sys.time () -. start in
+  Printf.printf "cout de la solution: %d\n\n" cost_tot;
+  (for i=0 to nb_avion-1 do
+    Printf.printf "L'avion %d effectue la manoeuvre: %d\n" (i+1) (List.hd maneuvers_sol.(i));
+  done);
+  Printf.printf "\nSolution trouvée en %f seconde(s).\n" passed_time;;

@@ -12,7 +12,7 @@ let load = fun fic_name ->
 
   (* cette partie ouvre le fichier texte donné en argument et creer les differentes reference dont on aura besoin,
      qui correspondent au carateristique du fichier de conflits  *)
-  Printf.printf "Loading data...\n";
+  Printf.printf "Loading data...\n\n\n";
   let fic = open_in fic_name in
   let nb_planes = ref 0 in
   let nb_man = ref 0 in
@@ -73,9 +73,5 @@ let load = fun fic_name ->
         | lettre -> Printf.printf "Type de ligne inconnu : commence par %c \n" lettre;
       with End_of_file -> not_ended:= false;
     done);
-  Printf.printf "Data loaded !\n";
+  Printf.printf "Data loaded !\n\n\n";
   (cost,no_conflict,!nb_planes);;
-
-
-
-(* ocamlc conflicts_resolution.ml -o conflicts_resolution dans le répertoire du fichier *)

@@ -30,15 +30,6 @@ val tail_compatible_maneuvers : t -> int -> int list
 val is_empty_planes_left : t -> bool
 (**renvoie true si la liste des avions restants est vide*)
 
-val get_priority : t -> int array -> int
-(**Calcule la priorite associee à l'objet t a partir de la liste des couts
-   noeud s : type t
-   liste des couts cost : int array
-   valeur de retour : priorité: int **)
 
 val filter : int -> int -> t -> bool array array array array -> t
-(**Enlève les manoeuvres imcompatibles pour tous les avions dans t.compatible_maneuvers en ayant donné : l'avion i (premier int) effectue la manoeuvre k (deuxième int). On teste grâce à no_conflict. *)
-
-
-val filter2 : int -> int -> t -> bool array array array array -> t
 (**Enlève les manoeuvres imcompatibles pour tous les avions dans t.compatible_maneuvers en ayant donné : l'avion i (premier int) effectue la manoeuvre k (deuxième int). On teste grâce à no_conflict. *)

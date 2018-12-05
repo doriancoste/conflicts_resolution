@@ -77,7 +77,7 @@ let filter = fun i manoeuvrei s no_conflict ->
   in
   make (parcours_planes [||] s.planes_left) s.planes_left
 
-let filter2 = fun i maneuveri s no_conflict ->
+let filter = fun i maneuveri s no_conflict ->
   (* on creer une fonction qui a partir de i, de j, de maneuveri, de la matrice des conflits et de la liste
 des manoeuvres possibes pour dj, renvoie la liste des maneuvre possible pour dj sachant que xi=maneuveri *)
   let rec dj_to_newdj = fun j dj_list new_dj_list ->
@@ -98,20 +98,3 @@ des manoeuvres possibes pour dj, renvoie la liste des maneuvre possible pour dj 
       browse_D tl d_array new_planes_left in
   let darray,p_left = browse_D s.planes_left s.compatible_maneuvers [] in
   make darray p_left;;
-
-
-
-
-let get_priority = fun s cost ->
-  (*
-s : type t; decrit un noeud
-cost : int Array ; cost.(i) contient le cout de la manoeuvre i
-retour : int; correspond au cout minimun que l'on peut obtenir a partir de s
- *)
-  let domain = s.compatible_maneuvers in
-  let size = Array.length domain in
-  let priority = ref 0 in
-  (for i = 0 to size-1 do
-     priority := !priority + cost.(List.hd domain.(i));
-   done);
-  !priority
