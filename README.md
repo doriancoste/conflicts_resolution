@@ -1,17 +1,13 @@
 # conflicts_resolution
 
-# Pensez à remplir le .mli quand vous ajoutez une fonction au fichier correspondant
-# Essayer de ne pas fusionner vos dossier avec ceux dispo sur le git s'il ne se compile pas tant qu'on sait pas comment gerer
-# Je ne sais pas trop comment marche git, mais essayer de faire une "New Branch" pour ajouter vos fichier dans le git
-#J'irais voir le prof demain pour en savoir plus sur ça
+# ************* A FAIRE ************* #
+#1- Resoudre le bug sur solve (probleme liée a une modification en place, faire un Array.copy)
+#2- Implementer AC3 (IMPORTANT: renvoyer le même type en retour, pour des soucis de compatilibilite)
+#3- Faire une meilleure borne (dual etc, voir le papier)
 
-
-## *********** DORIAN *********** ##
-#A faire
-#Reussir a automatiser la creation du .mli via le makefile ? (demander au prof)
-#fonction filter
-#algo general
-#type S, file a priorité etc
-#Demain on se voit et faudrait qu'on établisse une "découpe" des fichier pour eviter que ce soit trop le bordel
-
-#PS: pour répondre, mettez des '* ' comme moi au dessus pour qu'on sache qui a rejouter quoi apres quoi
+# ************* ATTENTION ************* #
+# - Pour l'instant, on peut faire la nouvelle fonction pour calculer la borne dans le meme fichier que l'autre, mais
+#       un fichier "borne.ml" pourrait nous être utile
+# - Pensez à remplir le .mli quand vous ajoutez une fonction au fichier correspondant
+# - Ne pas push sur le git du code qui ne compile pas
+# - Penser au fonctionnement des fonctions utilisées (modification en place, type de structure, egalite physique)
