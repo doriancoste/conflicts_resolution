@@ -6,11 +6,12 @@ let () =
   let s = Modele.init cost nb_avion in
   let prio = Priority.get_priority_1 s cost in
   let q = Pqueue.insert prio s Pqueue.empty in   (* Creer la file initiale *)
-
+  let count = ref 0 in
 
 
   (* on utilise une fonction récursive qui va depiler les elements de q jusqu'a trouver une solution, en ajoutant les voisin a q *)
   let rec solve_rec = fun q ->
+    count:=!count+1;
     let prio, s, q = Pqueue.extract q in
     match s.Modele.planes_left with
     (* plus d'avions a instancier = sol trouvee *)
@@ -51,8 +52,8 @@ let () =
   (* on appelle la fonction précédente pour obtenir la solution puis affichage de la solution et du temps d'execution *)
   let maneuvers_sol,cost_tot = solve_rec q in
   let passed_time = Sys.time () -. start in
-  Printf.printf "cout de la solution: %d\n\n" cost_tot;
+  Printf.printf "cout de la solution: %d\nnoeud exploré: %d\n\n" cost_tot !count;
   (for i=0 to nb_avion-1 do
     Printf.printf "L'avion %d effectue la manoeuvre: %d\n" (i+1) (List.hd maneuvers_sol.(i));
   done);
-  Printf.printf "\nSolution trouvée en %f seconde(s).\n" passed_time;;
+  Printf.printf "\nSolution trouvée en %f seconde(s).\n\n\n" passed_time;;

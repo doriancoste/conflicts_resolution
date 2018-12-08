@@ -11,3 +11,19 @@ retour : int; correspond au cout minimun que l'on peut obtenir a partir de s
      priority := !priority + cost.(List.hd domain.(i));
    done);
   !priority
+
+
+let glouton1 = fun mij_list navion ->
+  let tab = Array.init navion (fun _ -> true) in
+  let rec glout = fun liste prio ->
+    match liste with
+      []-> prio
+    | hd::tail ->
+      let i,j,mij=hd in
+      if tab.(i)&&tab.(j) then
+        (Array.set tab i false;
+         Array.set tab j false;
+         glout tail prio+mij)
+      else
+        glout tail prio in
+  glout mij_list 0;;
