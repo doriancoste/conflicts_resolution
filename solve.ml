@@ -1,6 +1,7 @@
 let () =
+  let fichier = Sys.argv.(1) in
   (* on charge d'abord le dichier du cluster puis on construit le sommet de l'arbre que l'on insert dans la file a priorite *)
-  let fichier = "conflicts.txt" in
+  (* let fichier = "conflicts.txt" in *)
   let cost,no_conflict,nb_avion = Load_data.load fichier in
   let start = Sys.time () in
   let s = Modele.init cost nb_avion in
