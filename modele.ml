@@ -17,7 +17,7 @@ let init cost n =
   let nombre_de_manoeuvres = Array.length cost in
   let liste_di = create_list nombre_de_manoeuvres (fun i -> i) in
 
-  let liste_di_sorted = List.sort (fun i j -> cost.(i)-cost.(j)) liste_di in
+  let liste_di_sorted = List.sort (fun i j -> cost.(i)-cost.(j)) liste_di in (*Tri des manoeuvres, la moins chère d'abord*)
 
   let a = Array.init n (fun _ -> liste_di_sorted) in
   let b = create_list n (fun i -> i) in
