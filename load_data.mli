@@ -5,3 +5,9 @@ val load : string -> int array * bool array array array array * int
     -bool array array array array = no_conflict tel que:
     - no_conflict.(i).(j).(mi).m(j) soit égal a true si il n'y a pas de conflits entre l'avion i et j effectuant les
       manoeuvre mi et mj, et false sinon **)
+
+
+val select_data_file : unit -> string
+(**
+  Affiche les fichiers du cluster disponibles et permet a l'utilisateur de choisir un fichier
+ **)

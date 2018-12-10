@@ -16,7 +16,7 @@ val find_mij : int -> int -> int array array -> bool array array array array -> 
        xj E Dj
  **)
 
-val build_mij_list : int -> int list array -> bool array array array array -> int array -> int list
+val build_mij_list : int -> int array array -> bool array array array array -> int array -> (int*int*int) list
 (**
    prend en argument
    navion : int -> le nombre d'avions
@@ -27,7 +27,7 @@ val build_mij_list : int -> int list array -> bool array array array array -> in
    retour : int list -> construit la liste des mij grâce à find_mij
  **)
 
-val lower_bound : int list -> int -> int
+val lower_bound : (int*int*int) list -> int -> int
 (**
    prend en argument
    mij_list: int list -> voir le retour de la fonction ci-dessus

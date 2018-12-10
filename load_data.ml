@@ -76,5 +76,12 @@ let load = fun fic_name ->
   Printf.printf "\nData loaded !\n\n\n";
   (cost,no_conflict,!nb_planes);;
 
-let select_datadile = fun () ->
-  Printf.printf ""
+let select_data_file = fun () ->
+  Printf.printf "Choississez un fichier:\n\n";
+  let fic_array = Sys.readdir "conflicts" in
+  (for i=0 to (Array.length fic_array)-1 do
+    Printf.printf "%d: %s\n" i fic_array.(i);
+  done);
+  Printf.printf "Votre choix: ";
+  let i = read_int () in
+  fic_array.(i);;

@@ -50,7 +50,7 @@ let build_mij_list = fun navion d no_conflicts cost ->
   let mij_list = ref [] in
   (for i = 0 to navion do
     for j=i+1 to navion do
-      mij_list:= (find_mij i j d no_conflicts cost)::!mij_list;
+      mij_list:= (i,j,(find_mij i j d no_conflicts cost))::!mij_list;
     done
   done);
   !mij_list;;
