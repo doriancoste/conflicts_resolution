@@ -75,3 +75,6 @@ let load = fun fic_name ->
     done);
   Printf.printf "\nData loaded !\n\n\n";
   (cost,no_conflict,!nb_planes);;
+
+let select_datadile = fun () ->
+  Printf.printf ""
