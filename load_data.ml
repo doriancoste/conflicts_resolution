@@ -77,6 +77,8 @@ let load = fun fic_name ->
   (cost,no_conflict,!nb_planes);;
 
 let select_data_file = fun () ->
+  (** dans cette fonction, on affiche les noms de fichiers disponibles qu'on a prealablement stocke dans un tableau, puis on demande
+      a l'utilisateur de choisir l'un d'eux sur l'entree standard   **)
   Printf.printf "Choississez un fichier:\n\n";
   let fic_array = Sys.readdir "conflicts" in
   (for i=0 to (Array.length fic_array)-1 do
@@ -87,6 +89,8 @@ let select_data_file = fun () ->
   fic_array.(i);;
 
 let select_bound = fun no_conflicts n_avion ->
+  (** dans cette fonction, on affiche les bornes disponible  puis on demande
+      a l'utilisateur de choisir l'une d'elles sur l'entree standard   **)
   Printf.printf "Selectionnez une borne:\n1:borne 1\n2:borne 2\n";
   Printf.printf "Votre choix:";
   let i = read_int () in

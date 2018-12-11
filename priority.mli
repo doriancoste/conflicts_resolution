@@ -17,10 +17,10 @@ val find_mij : int -> int -> int list array -> bool array array array array -> i
    no_conflict: bool array array array array -> no_conflict.(i).(j).(mi).(mj) est true si la manoeuvre mi de l'avion i et mj de l'avion j sont compatibles
    cost: int array -> cost.(mi) contient le cout de la manoeuvre mi
 
-   calcule mij = min (cout(xi)+cout(xj))
-       sc pas de conflit entre xi et xj
-       xi E Di
-       xj E Dj
+   retour: int -> mij = min (cout(xi)+cout(xj))
+                        sc pas de conflit entre xi et xj
+                        xi E Di
+                        xj E Dj
  **)
 
 val build_mij_list : int -> int list array -> bool array array array array -> int array -> (int*int*int) list
@@ -49,4 +49,6 @@ val get_priority_2 : bool array array array array -> int -> Modele.t -> int arra
      no_conflict: bool array array array array -> no_conflict.(i).(j).(mi).(mj) est true si la manoeuvre mi de l'avion i et mj de l'avion j sont compatibles
      cost: int array -> cost.(mi) contient le cout de la manoeuvre mi
      n_avion: int -> nombre d'avion
+
+     retour: int -> renvoie une borne min du noeud s qui sera sa priorite : elle est calculée a partir du dual de notre probleme
    **)

@@ -13,3 +13,6 @@ val select_data_file : unit -> string
  **)
 
 val select_bound : bool array array array array -> int -> (Modele.t -> int array -> int)
+(**
+  Affiche les bornes disponibles et permet a l'utilisateur d'en choisir une
+ **)
