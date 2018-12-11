@@ -11,3 +11,5 @@ val select_data_file : unit -> string
 (**
   Affiche les fichiers du cluster disponibles et permet a l'utilisateur de choisir un fichier
  **)
+
+val select_bound : bool array array array array -> int -> (Modele.t -> int array -> int)

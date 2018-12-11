@@ -4,13 +4,12 @@ let () =
   (* let fichier = "conflicts.txt" in *)
   let fichier = String.concat "" ["./conflicts/";Load_data.select_data_file ()] in
   let cost,no_conflict,nb_avion = Load_data.load fichier in
-  let start = Sys.time () in
   let s = Modele.init cost nb_avion in
-  let prio = Priority.get_priority_1 s cost in
+  let bound = Load_data.select_bound no_conflict nb_avion in
+  let prio = bound s cost in
   let q = Pqueue.insert prio s Pqueue.empty in   (* Creer la file initiale *)
   let count = ref 0 in
-
-
+  let start = Sys.time () in
   (* on utilise une fonction récursive qui va depiler les elements de q jusqu'a trouver une solution, en ajoutant les voisin a q *)
   let rec solve_rec = fun q ->
     count:=!count+1;

@@ -20,36 +20,28 @@ let find_mij = fun i j d no_conflits cost ->
          xi E Di
          xj E Dj
    *)
-  let rec fm_aux_k = fun mk k l ->
-   (*
-     renvoie mij pour une manoeuvre k de l'avion i : mk
-     cad on trouve la manoeuvre de l'avion j qui a le plus petit cout et qui est compatible avec la manoeuvre k pour l'avion i
-   *)
-    let xi = d.(i).(k) in
-    let xj = d.(j).(l) in
-    if Array.length d.(j) < l then
-      begin
-        let xjj = d.(j).(l+1) in
-        match no_conflits.(i).(j).(xi).(xj) with
-          true -> if (cost.(xi) + cost.(xj) < mk) then fm_aux_k (cost.(xi) + cost.(xj)) xi xjj else fm_aux_k mk xi xjj
-        | false -> fm_aux_k mk xi xjj
-      end
-    else mk in
-  let rec fm_list = fun k acc ->
-   (*
-     renvoie la liste des mij pour l'avion i pour chaque manoeuvre k
-   *)
-    let len = Array.length d.(i) in
-    if k < len then fm_list (k+1) ((fm_aux_k max_int k 0)::acc) else acc in
-   (*
-     on trie par ordre croissant et on prends le premier element
-   *)
-  List.hd (List.fast_sort (fun a b -> a - b) (fm_list 0 []));;
+  let cost_min = fun a b ->
+    if a<=b then b else a in
+
+  let mij = ref max_int in
+
+  let rec find = fun di dj ->
+    match di with
+      [] -> !mij
+    | xi::tail_i ->
+      let fonc = fun actual_cost maneuver_j ->
+        if no_conflits.(i).(j).(xi).(maneuver_j) then cost_min actual_cost (cost.(xi)+cost.(maneuver_j))
+        else actual_cost in
+
+      mij:= cost_min !mij (List.fold_left fonc !mij dj);
+      find tail_i dj in
+
+  find d.(i) d.(j)
 
 let build_mij_list = fun navion d no_conflicts cost ->
   let mij_list = ref [] in
   (for i = 0 to navion do
-    for j=i+1 to navion do
+     for j=i+1 to navion-1 do
       mij_list:= (i,j,(find_mij i j d no_conflicts cost))::!mij_list;
     done
   done);
@@ -69,3 +61,7 @@ let lower_bound = fun mij_list navion ->
       else
         glout tail prio in
   glout mij_list 0;;
+
+let get_priority_2 = fun no_conflicts n_avion s cost ->
+  let mij_list = build_mij_list n_avion s.Modele.compatible_maneuvers no_conflicts cost in
+  lower_bound mij_list n_avion;;
