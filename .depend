@@ -1,11 +1,13 @@
 ac3.cmo :
 ac3.cmx :
-load_data.cmo : priority.cmi load_data.cmi
-load_data.cmx : priority.cmx load_data.cmi
+load_data.cmo : priority.cmi modele.cmi load_data.cmi
+load_data.cmx : priority.cmx modele.cmx load_data.cmi
 load_data.cmi : modele.cmi
 modele.cmo : modele.cmi
 modele.cmx : modele.cmi
 modele.cmi :
+newac3.cmo :
+newac3.cmx :
 pqueue.cmo : pqueue.cmi
 pqueue.cmx : pqueue.cmi
 pqueue.cmi :

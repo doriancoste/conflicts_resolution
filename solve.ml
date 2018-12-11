@@ -6,6 +6,7 @@ let () =
   let cost,no_conflict,nb_avion = Load_data.load fichier in
   let s = Modele.init cost nb_avion in
   let bound = Load_data.select_bound no_conflict nb_avion in
+  let filter = Load_data.select_method () in
   let prio = bound s cost in
   let q = Pqueue.insert prio s Pqueue.empty in   (* Creer la file initiale *)
   let count = ref 0 in
@@ -43,7 +44,7 @@ let () =
 
       (* noeud de l'arbre contenant les branches ou plane_id effectue maneuver_of_id *)
       let s_no_filtered = Modele.make dnew_tot (List.tl s.planes_left) in
-      let s_new = Modele.filter plane_id maneuver_of_id s_no_filtered no_conflict in
+      let s_new = filter plane_id maneuver_of_id s_no_filtered no_conflict in
 
       (* on ajoute sr et s_new a la file q *)
       let new_q = Pqueue.insert (Priority.get_priority_1 sr cost) sr q in

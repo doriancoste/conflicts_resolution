@@ -62,24 +62,11 @@ let is_empty_planes_left t =
   |a::b -> false
 ;;
 
-let filter = fun i manoeuvrei s no_conflict ->
-  let rec parcours_compat = fun dj compat j -> (*renvoie un Dj*)
-    match compat with
-     [] -> dj
-    |hd::tl -> if no_conflict.(i).(j).(manoeuvrei).(hd) = true then
-        parcours_compat (List.append dj [hd]) tl j
-    else parcours_compat dj tl j
-  in
-  let rec parcours_planes = fun nouveau_tableau_des_Di planes  -> (*donne le tableau des Di*)
-    match planes with
-    |[] -> nouveau_tableau_des_Di
-    |hd::tl -> parcours_planes (Array.append nouveau_tableau_des_Di  [|parcours_compat [] s.compatible_maneuvers.(hd) hd|]) tl
-  in
-  make (parcours_planes [||] s.planes_left) s.planes_left
-
 let filter = fun i maneuveri s no_conflict ->
   (* on creer une fonction qui a partir de i, de j, de maneuveri, de la matrice des conflits et de la liste
 des manoeuvres possibes pour dj, renvoie la liste des maneuvre possible pour dj sachant que xi=maneuveri *)
+
+  (* cette fonction batie la nouvelle liste dj a partir de la precedente en enlevant les manoeuvres incompatible avec maneuver_i *)
   let rec dj_to_newdj = fun j dj_list new_dj_list ->
     match dj_list with
       [] -> List.rev new_dj_list
@@ -89,6 +76,9 @@ des manoeuvres possibes pour dj, renvoie la liste des maneuvre possible pour dj 
         dj_to_newdj j tl new_dj_list
       else
         dj_to_newdj j tl new_dj_list in
+
+  (* cette fonction parcours le tableau d et applique filter sur chacun de ses elements correspondant a un avion restant,
+     elle renvoie le d mis a jour ainsi que la liste des avion restant *)
   let rec browse_D = fun planes_left d_array new_planes_left ->
     match planes_left with
       [] -> (d_array, List.rev new_planes_left)
@@ -96,5 +86,32 @@ des manoeuvres possibes pour dj, renvoie la liste des maneuvre possible pour dj 
       Array.set d_array hd (dj_to_newdj hd d_array.(hd) []);
       let new_planes_left = hd::new_planes_left in
       browse_D tl d_array new_planes_left in
+  
+  (* on renvoie le noeud s apres y avoir applique le filtre *)
   let darray,p_left = browse_D s.planes_left s.compatible_maneuvers [] in
   make darray p_left;;
+
+  let ac3 = fun i j maneuver_i s no_conflict ->
+    let c_maneuvers = s.compatible_maneuvers in
+    let rec xi_match_rec = fun list_j result->
+      match list_j with
+        [] -> result
+      | maneuver_j::tail ->
+          if no_conflict.(i).(j).(maneuver_i).(maneuver_j) then
+            xi_match_rec tail (maneuver_j::result)
+          else
+            xi_match_rec tail result
+    in
+    Array.set c_maneuvers j (xi_match_rec c_maneuvers.(j) []);
+    make c_maneuvers s.planes_left;;
+
+let filter_ac3 = fun i maneuveri s no_conflict ->
+  let n = Array.length s.compatible_maneuvers in (* n planes in total*)
+  let result = ref s in
+  for j=0 to n-1 do
+    begin
+      if j !=i then
+        result := ac3 i j maneuveri !result no_conflict;
+    end
+  done;
+  s;;

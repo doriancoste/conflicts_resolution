@@ -1,11 +1,3 @@
-type t =
-    { compatible_maneuvers: int list array; (*les Di*)
-      planes_left: int list };;
-
-let make = fun d_tot planes_left ->
-  {compatible_maneuvers = d_tot; planes_left = planes_left};;
-
-
 let ac3 = fun i j maneuveri s no_conflict ->
   let c_maneuvers = s.compatible_maneuvers in
   let rec xi_match_rec = fun list_j result->

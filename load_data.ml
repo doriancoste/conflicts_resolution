@@ -97,4 +97,15 @@ let select_bound = fun no_conflicts n_avion ->
   if i = 1 then Priority.get_priority_1
   else
     if i = 2 then Priority.get_priority_2 no_conflicts n_avion
-    else failwith "borne inconnue"
+    else failwith "borne inconnue";;
+
+let select_method = fun () ->
+  (** dans cette fonction, on affiche les bornes disponible  puis on demande
+      a l'utilisateur de choisir l'une d'elles sur l'entree standard   **)
+  Printf.printf "Selectionnez une méthode:\n1:Base\n2:AC3\n";
+  Printf.printf "Votre choix:";
+  let i = read_int () in
+  if i = 1 then Modele.filter
+  else
+    if i = 2 then Modele.filter_ac3
+    else failwith "méthode inconnue"
