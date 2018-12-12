@@ -88,7 +88,7 @@ let select_data_file = fun () ->
   let i = read_int () in
   fic_array.(i);;
 
-let select_bound = fun no_conflicts n_avion ->
+let select_bound = fun no_conflict nb_planes ->
   (** dans cette fonction, on affiche les bornes disponible  puis on demande
       a l'utilisateur de choisir l'une d'elles sur l'entree standard   **)
   Printf.printf "Selectionnez une borne:\n1:borne 1\n2:borne 2\n";
@@ -96,7 +96,7 @@ let select_bound = fun no_conflicts n_avion ->
   let i = read_int () in
   if i = 1 then Priority.get_priority_1
   else
-    if i = 2 then Priority.get_priority_2 no_conflicts n_avion
+    if i = 2 then Priority.get_priority_2 no_conflict nb_planes
     else failwith "borne inconnue";;
 
 let select_method = fun () ->
