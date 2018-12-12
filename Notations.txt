@@ -21,3 +21,5 @@ coût manoeuvre : cxi = cost.(maneuver_i)
 nombre d'avions : nb_planes
 
 nombre de manoeuvres : nb_man
+
+Priorité : priority
