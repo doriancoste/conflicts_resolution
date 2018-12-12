@@ -4,6 +4,8 @@
 
 Indice d'avion : i, j
 
+Noeud / Objet type t : s
+
 Manoeuvre avion i : maneuver_i
 
 Bool array array array array : no_conflict
@@ -11,6 +13,8 @@ Bool array array array array : no_conflict
 Tableau des domaines : d_tot = s.compatible_maneuvers
 
 domaine d'un avion i : di
+
+tableau des coûts : cost
 
 coût manoeuvre : cxi = cost.(maneuver_i)
 
