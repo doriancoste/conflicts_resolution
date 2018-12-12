@@ -13,7 +13,7 @@ retour : int; correspond au cout minimun que l'on peut obtenir a partir de s
   !priority;;
 
 
-let find_mij = fun i j d no_conflits cost ->
+let find_mij = fun i j d_tot no_conflict cost ->
    (**
   cette fonction calcule mij pour i et j fixes
     **)
@@ -33,7 +33,7 @@ let find_mij = fun i j d no_conflits cost ->
     | xi::tail_i ->
       (* cette fonction prend le cout actuel et un xj et renvoie le min du cout actuel et de cout(xi)+cout(xj) *)
       let fonc = fun actual_cost maneuver_j ->
-        if no_conflits.(i).(j).(xi).(maneuver_j) then cost_min actual_cost (cost.(xi)+cost.(maneuver_j))
+        if no_conflict.(i).(j).(xi).(maneuver_j) then cost_min actual_cost (cost.(xi)+cost.(maneuver_j))
         else actual_cost in
 
       (* on applique la fonction precedente a partir de xi sur la liste dj avec un fold_left
@@ -42,21 +42,21 @@ let find_mij = fun i j d no_conflits cost ->
       find tail_i dj in
 
   (* on applique les elements precedents pour calculer mij *)
-  find d.(i) d.(j)
+  find d_tot.(i) d_tot.(j)
 
-let build_mij_list = fun navion d no_conflicts cost ->
-  (** cette fonction construit la liste des (i*j*mij) possibles en bouclant i de 0 a navion et j de i+1 a navion-1 pour eviter de calculer mii **)
+let build_mij_list = fun nb_planes d_tot no_conflict cost ->
+  (** cette fonction construit la liste des (i*j*mij) possibles en bouclant i de 0 a nb_planes et j de i+1 a nb_planes-1 pour eviter de calculer mii **)
   let mij_list = ref [] in
-  (for i = 0 to navion do
-     for j=i+1 to navion-1 do
-      mij_list:= (i,j,(find_mij i j d no_conflicts cost))::!mij_list;
+  (for i = 0 to nb_planes do
+     for j=i+1 to nb_planes-1 do
+      mij_list:= (i,j,(find_mij i j d_tot no_conflict cost))::!mij_list;
     done
   done);
   !mij_list;;
 
-let lower_bound = fun mij_list navion ->
+let lower_bound = fun mij_list nb_planes ->
   (** cette fonction s'applique a mij_list afin de renvoyer la borne inf = la priorite d'un noeud **)
-  let tab = Array.init navion (fun _ -> true) in
+  let tab = Array.init nb_planes (fun _ -> true) in
   (* on utilise un algorithme glouton pour calculer cette borne *)
   let rec glout = fun liste prio ->
     match liste with
@@ -71,9 +71,9 @@ let lower_bound = fun mij_list navion ->
         glout tail prio in
   glout mij_list 0;;
 
-let get_priority_2 = fun no_conflicts n_avion s cost ->
+let get_priority_2 = fun no_conflict nb_planes s cost ->
   (**
   cette fonction utilise les fonctions precedente et renvoie la priorite du noeud s en utilisant le dual du probleme
    **)
-  let mij_list = build_mij_list n_avion s.Modele.compatible_maneuvers no_conflicts cost in
-  lower_bound mij_list n_avion;;
+  let mij_list = build_mij_list nb_planes s.Modele.compatible_maneuvers no_conflict cost in
+  lower_bound mij_list nb_planes;;
