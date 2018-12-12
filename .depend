@@ -1,5 +1,3 @@
-ac3.cmo :
-ac3.cmx :
 load_data.cmo : priority.cmi modele.cmi load_data.cmi
 load_data.cmx : priority.cmx modele.cmx load_data.cmi
 load_data.cmi : modele.cmi

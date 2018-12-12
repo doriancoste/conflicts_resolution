@@ -86,7 +86,7 @@ des manoeuvres possibes pour dj, renvoie la liste des maneuvre possible pour dj 
       Array.set d_array hd (dj_to_newdj hd d_array.(hd) []);
       let new_planes_left = hd::new_planes_left in
       browse_D tl d_array new_planes_left in
-  
+
   (* on renvoie le noeud s apres y avoir applique le filtre *)
   let darray,p_left = browse_D s.planes_left s.compatible_maneuvers [] in
   make darray p_left;;
