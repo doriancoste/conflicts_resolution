@@ -4,8 +4,6 @@ load_data.cmi : modele.cmi
 modele.cmo : modele.cmi
 modele.cmx : modele.cmi
 modele.cmi :
-newac3.cmo :
-newac3.cmx :
 pqueue.cmo : pqueue.cmi
 pqueue.cmx : pqueue.cmi
 pqueue.cmi :

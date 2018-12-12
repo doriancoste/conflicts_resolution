@@ -86,7 +86,7 @@ des manoeuvres possibes pour dj, renvoie la liste des maneuvre possible pour dj 
       Array.set d_array hd (dj_to_newdj hd d_array.(hd) []);
       let new_planes_left = hd::new_planes_left in
       browse_D tl d_array new_planes_left in
-  
+
   (* on renvoie le noeud s apres y avoir applique le filtre *)
   let darray,p_left = browse_D s.planes_left s.compatible_maneuvers [] in
   make darray p_left;;
@@ -96,38 +96,33 @@ let consistency = fun i j s no_conflict ->
 	let dj = s.compatible_maneuvers.(j) in
 	let evolve = ref false in
 	let rec consistency_rec = fun new_dj dj_left ->
-		match dj_left with
-			|[] -> new_dj
-			|hd_j::tl_j -> 
-				let rec browse_di = fun di_left ->
-					match di_left with
-						|[] -> false
-						|hd_i::tl_i -> if no_conflict.(i).(j).(hd_i).(hd_j) then true else browse_di tl_i
-				in
-				if browse_di di then consistency_rec (hd_j::new_dj) tl_j
-				else (evolve := true; consistency_rec new_dj tl_j); in
-	let new_dj = List.rev (consistency_rec [] dj) in
-	Array.set s.compatible_maneuvers j new_dj;
-	!evolve, s
+   match dj_left with
+     [] -> new_dj
+   |hd_j::tl_j ->
+     let rec browse_di = fun di_left ->
+       match di_left with
+         [] -> false
+       |hd_i::tl_i -> if no_conflict.(i).(j).(hd_i).(hd_j) then true else browse_di tl_i
+     in
+     if browse_di di then consistency_rec (hd_j::new_dj) tl_j
+     else (evolve := true; consistency_rec new_dj tl_j)
+  in
+  let new_dj = List.rev (consistency_rec [] dj) in
+  Array.set s.compatible_maneuvers j new_dj;
+  !evolve, s
 
-	
 
 let filter_ac3 = fun i maneuver_i s no_conflict ->
-	let nb_planes = Array.lenght s.compatible_maneuvers in
+  let nb_planes = Array.length s.compatible_maneuvers in
 	let couple_list = fun i ->
-		List.init (nb_planes-1) (fun j -> if i>j then i,j else i,j+1) in
-	let rec list_explore = fun s list_to_explore ->
-		match list_to_explore with
-			|[] -> s
-			|hd::tl -> 
-				k,l = hd
-				evolve, new_s = consistency k l s no_conflict
-				if evolve then list_explore new_s (List.append tl (couple_list l))
-				else list_explore new_s tl
-	in
-	list_explore s (couple_list i)
-				
-
-
-
-  s;;
+   List.init (nb_planes-1) (fun j -> if i>j then i,j else i,j+1) in
+  let rec list_explore = fun s list_to_explore ->
+    match list_to_explore with
+    [] -> s
+    |hd::tl ->
+      let k,l = hd in
+      let evolve, new_s = consistency k l s no_conflict in
+      if evolve then list_explore new_s (List.append tl (couple_list l))
+      else list_explore new_s tl
+  in
+  list_explore s (couple_list i)

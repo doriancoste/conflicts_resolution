@@ -39,7 +39,7 @@ val is_empty_planes_left : t -> bool
 val filter : int -> int -> t -> bool array array array array -> t
 (** Enlève les manoeuvres imcompatibles pour tous les avions dans t.compatible_maneuvers en ayant donné : l'avion i (premier int) effectue la manoeuvre k (deuxième int). On teste grâce à no_conflict. *)
 
-val ac3 : int -> int -> int -> t -> bool array array array array -> t
+val consistency : int -> int -> t -> bool array array array array -> bool*t
 (**
 
  **)
