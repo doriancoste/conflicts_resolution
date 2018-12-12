@@ -91,27 +91,43 @@ des manoeuvres possibes pour dj, renvoie la liste des maneuvre possible pour dj 
   let darray,p_left = browse_D s.planes_left s.compatible_maneuvers [] in
   make darray p_left;;
 
-let ac3 = fun i j maneuver_i s no_conflict ->
-    let c_maneuvers = s.compatible_maneuvers in
-    let rec xi_match_rec = fun list_j result->
-      match list_j with
-        [] -> result
-      | maneuver_j::tail ->
-          if no_conflict.(i).(j).(maneuver_i).(maneuver_j) then
-            xi_match_rec tail (maneuver_j::result)
-          else
-            xi_match_rec tail result
-    in
-    Array.set c_maneuvers j (xi_match_rec c_maneuvers.(j) []);
-    make c_maneuvers s.planes_left;;
+let consistency = fun i j s no_conflict ->
+	let di = s.compatible_maneuvers.(i) in
+	let dj = s.compatible_maneuvers.(j) in
+	let evolve = ref false in
+	let rec consistency_rec = fun new_dj dj_left ->
+		match dj_left with
+			|[] -> new_dj
+			|hd_j::tl_j -> 
+				let rec browse_di = fun di_left ->
+					match di_left with
+						|[] -> false
+						|hd_i::tl_i -> if no_conflict.(i).(j).(hd_i).(hd_j) then true else browse_di tl_i
+				in
+				if browse_di di then consistency_rec (hd_j::new_dj) tl_j
+				else (evolve := true; consistency_rec new_dj tl_j); in
+	let new_dj = List.rev (consistency_rec [] dj) in
+	Array.set s.compatible_maneuvers j new_dj;
+	!evolve, s
+
+	
 
 let filter_ac3 = fun i maneuver_i s no_conflict ->
-  let n = Array.length s.compatible_maneuvers in (* n planes in total*)
-  let result = ref s in
-  for j=0 to n-1 do
-    begin
-      if j !=i then
-        result := ac3 i j maneuver_i !result no_conflict;
-    end
-  done;
+	let nb_planes = Array.lenght s.compatible_maneuvers in
+	let couple_list = fun i ->
+		List.init (nb_planes-1) (fun j -> if i>j then i,j else i,j+1) in
+	let rec list_explore = fun s list_to_explore ->
+		match list_to_explore with
+			|[] -> s
+			|hd::tl -> 
+				k,l = hd
+				evolve, new_s = consistency k l s no_conflict
+				if evolve then list_explore new_s (List.append tl (couple_list l))
+				else list_explore new_s tl
+	in
+	list_explore s (couple_list i)
+				
+
+
+
   s;;
