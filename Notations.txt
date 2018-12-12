@@ -1,0 +1,19 @@
+---Notations---
+
+
+
+Indice d'avion : i, j
+
+Manoeuvre avion i : maneuver_i
+
+Bool array array array array : no_conflict
+
+Tableau des domaines : d_tot = s.compatible_maneuvers
+
+domaine d'un avion i : di
+
+coût manoeuvre : cxi = cost.(maneuver_i)
+
+nombre d'avions : nb_planes
+
+nombre de manoeuvres : nb_man
