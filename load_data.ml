@@ -81,6 +81,7 @@ let select_data_file = fun () ->
       a l'utilisateur de choisir l'un d'eux sur l'entree standard   **)
   Printf.printf "Choississez un fichier:\n\n";
   let fic_array = Sys.readdir "conflicts" in
+  Array.fast_sort String.compare fic_array;
   (for i=0 to (Array.length fic_array)-1 do
     Printf.printf "%d: %s\n" i fic_array.(i);
   done);

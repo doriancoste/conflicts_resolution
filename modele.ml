@@ -64,32 +64,21 @@ let is_empty_planes_left s =
 
 let filter = fun i s no_conflict ->
   (* on creer une fonction qui a partir de i, de j, de maneuveri, de la matrice des conflits et de la liste
-des manoeuvres possibes pour dj, renvoie la liste des maneuvre possible pour dj sachant que xi=maneuveri *)
-  let maneuver_i = List.hd s.compatible_maneuvers.(i) in
-  (* cette fonction batie la nouvelle liste dj a partir de la precedente en enlevant les manoeuvres incompatible avec maneuver_i *)
-  let rec dj_to_newdj = fun j dj_list new_dj_list ->
-    match dj_list with
-      [] -> List.rev new_dj_list
-    | hd::tl ->
-      if no_conflict.(i).(j).(maneuver_i).(hd) then
-        let new_dj_list = hd::new_dj_list in
-        dj_to_newdj j tl new_dj_list
-      else
-        dj_to_newdj j tl new_dj_list in
+     des manoeuvres possibes pour dj, renvoie la liste des maneuvre possible pour dj sachant que xi=maneuveri *)
 
-  (* cette fonction parcours le tableau d et applique filter sur chacun de ses elements correspondant a un avion restant,
-     elle renvoie le d mis a jour ainsi que la liste des avion restant *)
-  let rec browse_D = fun planes_left d_array new_planes_left ->
-    match planes_left with
-      [] -> (d_array, List.rev new_planes_left)
-    | hd::tl ->
-      Array.set d_array hd (dj_to_newdj hd d_array.(hd) []);
-      let new_planes_left = hd::new_planes_left in
-      browse_D tl d_array new_planes_left in
+  (* cette fonction sera notre prédicat applique aux dj pour les filter. Elle renvoie vrai si les maneuvres sont
+  compatible et non sinon *)
+  let predicate = fun j maneuver_j ->
+    List.exists (fun maneuver_i -> no_conflict.(i).(j).(maneuver_i).(maneuver_j)) s.compatible_maneuvers.(i) in
 
-  (* on renvoie le noeud s apres y avoir applique le filtre *)
-  let darray,p_left = browse_D s.planes_left s.compatible_maneuvers [] in
-  make darray p_left;;
+  (* cette fonction sera appliquee aux avions restants pour réduire leurs domaines en fonctions de la compatibilité avec
+    variable instanciee*)
+  let iter_on_planes_left = fun j ->
+    Array.set s.compatible_maneuvers j (List.filter (predicate j) s.compatible_maneuvers.(j)) in
+
+  (* on iter notre fonction sur les avions non instancies et on renvoie s *)
+  List.iter iter_on_planes_left s.planes_left;
+  s;;
 
 let consistency = fun i j s no_conflict ->
 	let di = s.compatible_maneuvers.(i) in

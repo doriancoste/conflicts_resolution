@@ -37,11 +37,35 @@ val is_empty_planes_left : t -> bool
 
 
 val filter : int -> t -> bool array array array array -> t
-(** Enlève les manoeuvres imcompatibles pour tous les avions dans t.compatible_maneuvers en ayant donné : l'avion i (premier int) effectue la manoeuvre k (deuxième int). On teste grâce à no_conflict. *)
+(**
+   i : int -> indice de l'avion instancie
+   s : type t -> noeud a developper
+   no_conflict: bool array array array array -> no_conflict.(i).(j).(mi).(mj) est true si la manoeuvre mi de l'avion i et mj de l'avion j sont compatibles
+
+   retour: type t -> noeud filtre
+
+   Enlève les manoeuvres imcompatibles pour tous les avions dans t.compatible_maneuvers en utilisant le tableau des conflits
+**)
 
 val consistency : int -> int -> t -> bool array array array array -> bool*t
 (**
 
+   i : int -> indice de l'avion instancie
+   j : int -> indice de l'avion pour lequel on va trier les manoeuvres
+   s : type t -> noeud a filter
+   no_conflict: bool array array array array -> no_conflict.(i).(j).(mi).(mj) est true si la manoeuvre mi de l'avion i et mj de l'avion j sont compatibles
+
+   retour : bool*t -> booleen a true si une modification a ete effectue dans dj dans le type t renvoye
+
  **)
 
 val filter_ac3 : int -> t -> bool array array array array -> t
+(**
+   i : int -> indice de l'avion instancie
+   s : type t -> noeud a developper
+   no_conflict: bool array array array array -> no_conflict.(i).(j).(mi).(mj) est true si la manoeuvre mi de l'avion i et mj de l'avion j sont compatibles
+
+   retour: type t -> noeud filtre
+
+   Enleve les manoeuvres imcompatibles pour tous les avions dans t.compatible_maneuvers en utilisant ac3
+ **)
