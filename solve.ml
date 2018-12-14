@@ -37,14 +37,14 @@ let () =
 
       (* tableau des domaines de maneuvres compatibles au cas plane_id effectue maneuver_id *)
       let dnew_tot = Array.copy d_tot in
-      Array.set d_tot plane_id d_id;
+      Array.set dnew_tot plane_id d_id;
 
       (* noeud de l'arbre contenant les branches ou plane_id n'effectue PAS maneuver_id *)
       let sr = Modele.make dr_tot s.planes_left in
 
       (* noeud de l'arbre contenant les branches ou plane_id effectue maneuver_id *)
       let s_no_filtered = Modele.make dnew_tot (List.tl s.planes_left) in
-      let s_new = filter plane_id maneuver_id s_no_filtered no_conflict in
+      let s_new = filter plane_id s_no_filtered no_conflict in
 
       (* on ajoute sr et s_new a la file q *)
       let new_q = Pqueue.insert (Priority.get_priority_1 sr cost) sr q in

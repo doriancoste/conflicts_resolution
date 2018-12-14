@@ -36,7 +36,7 @@ val is_empty_planes_left : t -> bool
 (** renvoie true si la liste des avions restants est vide*)
 
 
-val filter : int -> int -> t -> bool array array array array -> t
+val filter : int -> t -> bool array array array array -> t
 (** Enlève les manoeuvres imcompatibles pour tous les avions dans t.compatible_maneuvers en ayant donné : l'avion i (premier int) effectue la manoeuvre k (deuxième int). On teste grâce à no_conflict. *)
 
 val consistency : int -> int -> t -> bool array array array array -> bool*t
@@ -44,4 +44,4 @@ val consistency : int -> int -> t -> bool array array array array -> bool*t
 
  **)
 
-val filter_ac3 : int -> int -> t -> bool array array array array -> t
+val filter_ac3 : int -> t -> bool array array array array -> t

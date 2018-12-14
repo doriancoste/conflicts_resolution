@@ -62,10 +62,10 @@ let is_empty_planes_left s =
   |a::b -> false
 ;;
 
-let filter = fun i maneuver_i s no_conflict ->
+let filter = fun i s no_conflict ->
   (* on creer une fonction qui a partir de i, de j, de maneuveri, de la matrice des conflits et de la liste
 des manoeuvres possibes pour dj, renvoie la liste des maneuvre possible pour dj sachant que xi=maneuveri *)
-
+  let maneuver_i = List.hd s.compatible_maneuvers.(i) in
   (* cette fonction batie la nouvelle liste dj a partir de la precedente en enlevant les manoeuvres incompatible avec maneuver_i *)
   let rec dj_to_newdj = fun j dj_list new_dj_list ->
     match dj_list with
@@ -112,7 +112,7 @@ let consistency = fun i j s no_conflict ->
   !evolve, s
 
 
-let filter_ac3 = fun i maneuver_i s no_conflict ->
+let filter_ac3 = fun i s no_conflict ->
   let nb_planes = Array.length s.compatible_maneuvers in
 	let couple_list = fun i ->
    List.init (nb_planes-1) (fun j -> if i>j then i,j else i,j+1) in

@@ -17,7 +17,7 @@ val select_bound : bool array array array array -> int -> (Modele.t -> int array
   Affiche les bornes disponibles et permet a l'utilisateur d'en choisir une
  **)
 
-val select_method : unit -> (int -> int -> Modele.t -> bool array array array array -> Modele.t)
+val select_method : unit -> (int -> Modele.t -> bool array array array array -> Modele.t)
 (**
    Affiche les methodes disponibles et permet a l'utilisateur d'en choisir une
  **)
