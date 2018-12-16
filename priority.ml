@@ -20,7 +20,7 @@ let find_mij = fun i j d_tot no_conflict cost ->
 
   (* fonction intermediare permettant de calculer le min de deux valeurs *)
   let cost_min = fun a b ->
-    if a<=b then b else a in
+    if a<=b then a else b in
 
   (* on creer une reference vers notre mij potentiel *)
   let mij = ref max_int in
