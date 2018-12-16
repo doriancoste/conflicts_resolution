@@ -57,8 +57,8 @@ note : quand on aura implémenté le tri des avions (le plus contraint en premie
       let s_new = filter plane_id s_no_filtered no_conflict in
 
       (* on ajoute sr et s_new a la file q *)
-      let new_q = Pqueue.insert (priority sr cost) sr q in
-      let new_q = Pqueue.insert (priority s_new cost) s_new new_q in
+      let new_q = Pqueue.insert (bound sr cost) sr q in
+      let new_q = Pqueue.insert (bound s_new cost) s_new new_q in
       solve_rec new_q in
 
   (* on appelle la fonction précédente pour obtenir la solution puis affichage de la solution et du temps d'execution *)

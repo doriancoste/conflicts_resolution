@@ -10,5 +10,5 @@ pqueue.cmi :
 priority.cmo : modele.cmi priority.cmi
 priority.cmx : modele.cmx priority.cmi
 priority.cmi : modele.cmi
-solve.cmo : priority.cmi pqueue.cmi modele.cmi load_data.cmi
-solve.cmx : priority.cmx pqueue.cmx modele.cmx load_data.cmx
+solve.cmo : pqueue.cmi modele.cmi load_data.cmi
+solve.cmx : pqueue.cmx modele.cmx load_data.cmx
