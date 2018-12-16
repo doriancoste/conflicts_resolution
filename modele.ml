@@ -43,7 +43,6 @@ let head_compatible_maneuvers s i =
   |[] -> raise (EmptyCompatibleManeuvers i)
 ;;
 
-
 let tail_compatible_maneuvers s i =
   match s.compatible_maneuvers.(i) with
   |a::b -> b
@@ -61,6 +60,18 @@ let is_empty_planes_left s =
    [] -> true
   |a::b -> false
 ;;
+
+let choose_plane_to_instantiate s =
+ let rec cpti_aux l (* liste des avions *) chosen_plane (* avion choisi *) domain_size_chosen_plane (* nombre de manoeuvres possibles pour l’avion choisi *) i (* pour la i-ème liste de l’array t.compatible_maneuvers *) =
+   match l with  (* on parlours la liste des avions restants *)
+   [] -> chosen_plane
+   | hd::tl -> if (List.length s.compatible_maneuvers.(i)) < domain_size_chosen_plane (* la taille de la liste des manoeuvres possibles de l’avion i < taille pour l’avion choisi *)
+   then cpti_aux tl hd (List.length s.compatible_maneuvers.(i)) (i+1) (* l'identifiant de l'avion choisi est maintenant hd, avec sa domain_size correspondante on continue avec la nouvelle liste d'avions restants et la liste suivante de maneuvres compatibles*)
+   else cpti_aux tl chosen_plane domain_size_chosen_plane (i+1) (* l'avion choisi ne change pas, on continue avec la nouvelle liste d'avions restants et la liste suivante de maneuvres compatibles *)
+ in
+ cpti_aux s.planes_left (-1) max_int 0 (*  *)
+ ;;
+
 
 let filter = fun i s no_conflict ->
   (* on creer une fonction qui a partir de i, de j, de maneuveri, de la matrice des conflits et de la liste
@@ -83,7 +94,7 @@ let filter = fun i s no_conflict ->
 let rec union_list = fun list_1 list_2 ->
 	match list_1 with
 	  [] -> list_2
-	| hd::tl ->if List.mem hd list_2 then union_list tl list_2 else union_list tl (hd::list_2)	
+	| hd::tl ->if List.mem hd list_2 then union_list tl list_2 else union_list tl (hd::list_2)
 
 let consistency = fun i j s no_conflict ->
 	let di = s.compatible_maneuvers.(i) in
@@ -122,17 +133,17 @@ let filter_ac3 = fun i s no_conflict ->
 
 
 (***
-    
+
 let filter_init = fun s no_conflict filter_type ->
   (*on applique le filtre initial
 filter_type = 0 : le filtre parcourt toute la liste
 filter_type = n > 0 : on filtre uniquement sur les n premiers avions*)
-  
-  let nb_planes = Array.length s.compatible_maneuvers in  
+
+  let nb_planes = Array.length s.compatible_maneuvers in
 
 (*on va effectuer le filtrage initial selon les filter_nb_planes premiers avions.
   si on a rentré 0 dans filter_type, on filtre selon tous les avions*)
-  
+
   let filter_nb_planes = if filter_type=0 then nb_planes
   else if filter_type > nb_planes then nb_planes else filter_type in
 
@@ -160,11 +171,5 @@ exemple : si il y a 20 avions et filter_nb_planes = 1, il y a 19 couples
   in
 
   filter_couple_list s (couple_list filter_nb_planes)
-  
-***)
-        
-    
-    
-  
 
-  
+***)

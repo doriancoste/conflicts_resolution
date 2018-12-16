@@ -75,5 +75,5 @@ let get_priority_2 = fun no_conflict nb_planes s cost ->
   (**
   cette fonction utilise les fonctions precedente et renvoie la priorite du noeud s en utilisant le dual du probleme
    **)
-  let mij_list = build_mij_list nb_planes s.Modele.compatible_maneuvers no_conflict cost in
+  let mij_list = List.sort compare (build_mij_list nb_planes s.Modele.compatible_maneuvers no_conflict cost) in
   lower_bound mij_list nb_planes;;

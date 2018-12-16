@@ -35,6 +35,13 @@ val tail_compatible_maneuvers : t -> int -> int list
 val is_empty_planes_left : t -> bool
 (** renvoie true si la liste des avions restants est vide*)
 
+val choose_plane_to_instantiate : t -> int
+
+(*
+ Choisi l'avion à instancier. Ce sera celui ayant le moins de manoeuvres possibles.
+ Pars d'un noeud s de type t et renvoie l'identifiant int de l'avion à instancier.
+*)
+
 
 val filter : int -> t -> bool array array array array -> t
 (**
@@ -55,7 +62,7 @@ val union_list : 'a list -> 'a list -> 'a list
 
    retour: the union of the two lists
 
-   combiner deux lists et assurer l'unicité des éléments 
+   combiner deux lists et assurer l'unicité des éléments
 **)
 
 val consistency : int -> int -> t -> bool array array array array -> bool*t
