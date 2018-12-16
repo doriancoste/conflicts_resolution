@@ -47,6 +47,17 @@ val filter : int -> t -> bool array array array array -> t
    Enlève les manoeuvres imcompatibles pour tous les avions dans t.compatible_maneuvers en utilisant le tableau des conflits
 **)
 
+
+val union_list : 'a list -> 'a list -> 'a list
+(**
+   list_1 : the first list
+   list_2 : the second list
+
+   retour: the union of the two lists
+
+   combiner deux lists et assurer l'unicité des éléments 
+**)
+
 val consistency : int -> int -> t -> bool array array array array -> bool*t
 (**
 

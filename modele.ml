@@ -80,6 +80,11 @@ let filter = fun i s no_conflict ->
   List.iter iter_on_planes_left s.planes_left;
   s;;
 
+let rec union_list = fun list_1 list_2 ->
+	match list_1 with
+	  [] -> list_2
+	| hd::tl ->if List.mem hd list_2 then union_list tl list_2 else union_list tl (hd::list_2)	
+
 let consistency = fun i j s no_conflict ->
 	let di = s.compatible_maneuvers.(i) in
 	let dj = s.compatible_maneuvers.(j) in
@@ -100,7 +105,6 @@ let consistency = fun i j s no_conflict ->
   Array.set s.compatible_maneuvers j new_dj;
   !evolve, s
 
-
 let filter_ac3 = fun i s no_conflict ->
   let nb_planes = Array.length s.compatible_maneuvers in
 	let couple_list = fun i ->
@@ -111,7 +115,7 @@ let filter_ac3 = fun i s no_conflict ->
     |hd::tl ->
       let k,l = hd in
       let evolve, new_s = consistency k l s no_conflict in
-      if evolve then list_explore new_s (List.append tl (couple_list l))
+      if evolve then list_explore new_s (union_list (couple_list l) tl)
       else list_explore new_s tl
   in
   list_explore s (couple_list i)
