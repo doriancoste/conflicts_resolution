@@ -61,7 +61,7 @@ let is_empty_planes_left s =
   |a::b -> false
 ;;
 
-let choose_plane_to_instantiate s =
+let choose_plane_to_instantiate s = (*2ième essaie*)
  let rec cpti_aux l (* liste des avions *) chosen_plane (* avion choisi *) domain_size_chosen_plane (* nombre de manoeuvres possibles pour l’avion choisi *) i (* pour la i-ème liste de l’array t.compatible_maneuvers *) =
    match l with  (* on parlours la liste des avions restants *)
    [] -> chosen_plane
