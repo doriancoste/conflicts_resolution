@@ -4,7 +4,17 @@ let () =
   (* let fichier = "conflicts.txt" in *)
   let fichier = String.concat "" ["./conflicts/";Load_data.select_data_file ()] in
   let cost,no_conflict,nb_planes = Load_data.load fichier in
-  let s = Modele.init cost nb_planes in
+  let s(**s0*) = Modele.init cost nb_planes in
+(** let s = Modele.filter_init s0 no_conflict filter_type *)
+
+(**on applique le filtre initial
+filter_type = 0 : le filtre parcourt toute la liste
+filter_type = n > 0 : on filtre uniquement sur les n premiers avions
+
+note : filter_type à rajouter dans les arguments de lancement de l'algo (en rajoutant un test qui vérifie que c'est un entier positif)
+
+note : quand on aura implémenté le tri des avions (le plus contraint en premier), le filtrage selon les premiers avions sera celui qui éliminera le plus de solutions*)
+
   let bound = Load_data.select_bound no_conflict nb_planes in
   let filter = Load_data.select_method () in
   let priority = bound s cost in
@@ -54,7 +64,7 @@ let () =
   (* on appelle la fonction précédente pour obtenir la solution puis affichage de la solution et du temps d'execution *)
   let maneuvers_sol,cost_tot = solve_rec q in
   let passed_time = Sys.time () -. start in
-  Printf.printf "cout de la solution: %d\nnoeud exploré: %d\n\n" cost_tot !count;
+  Printf.printf "cout de la solution: %d\nnombre de noeuds explorés: %d\n\n" cost_tot !count;
   (for i=0 to nb_planes-1 do
     Printf.printf "L'avion %d effectue la manoeuvre: %d\n" (i+1) (List.hd maneuvers_sol.(i));
   done);
