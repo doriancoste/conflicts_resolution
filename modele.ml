@@ -107,8 +107,8 @@ let consistency = fun i j s no_conflict ->
 
 let filter_ac3 = fun i s no_conflict ->
   let nb_planes = Array.length s.compatible_maneuvers in
-	let couple_list = fun i ->
-   List.init (nb_planes-1) (fun j -> if i>j then i,j else i,j+1) in
+  let couple_list = fun i ->
+    List.init (nb_planes-1) (fun j -> if i>j then i,j else i,j+1) in
   let rec list_explore = fun s list_to_explore ->
     match list_to_explore with
     [] -> s
@@ -119,3 +119,52 @@ let filter_ac3 = fun i s no_conflict ->
       else list_explore new_s tl
   in
   list_explore s (couple_list i)
+
+
+(***
+    
+let filter_init = fun s no_conflict filter_type ->
+  (*on applique le filtre initial
+filter_type = 0 : le filtre parcourt toute la liste
+filter_type = n > 0 : on filtre uniquement sur les n premiers avions*)
+  
+  let nb_planes = Array.length s.compatible_maneuvers in  
+
+(*on va effectuer le filtrage initial selon les filter_nb_planes premiers avions.
+  si on a rentré 0 dans filter_type, on filtre selon tous les avions*)
+  
+  let filter_nb_planes = if filter_type=0 then nb_planes
+  else if filter_type > nb_planes then nb_planes else filter_type in
+
+(*on initialise la liste des couples d'avions à filtrer.
+  il y a (filter_nb_planes-1) * nb_planes couples à traiter :
+exemple : si il y a 20 avions et filter_nb_planes = 1, il y a 19 couples
+  si filter_nb_planes = 2, il y en a 19 + 19, en fait 19 pour chaque avion selon lequel on filtre*)
+(*La liste, dans le 2e exemple, est : (1,2) (1,3) ... (1,20) (2,1) (2,3) (2,4) ... (2,20)*)
+(**A tester ! Je ne peux pas tester la fonction List.init*)
+
+  let couple_list = fun filter_nb_planes ->
+    let size = filter_nb_planes*(nb_planes-1) in (*taille de la liste*)
+    List.init size (fun j -> if (j/nb_planes-1)>j%(nb_planes-1) then j/(nb_planes-1),j%(nb_planes-1) else j/(nb_planes-1),(j%(nb_planes-1))+1) in
+
+(*On effectue un filtrage récursif avec consistency*)
+(**Je n'ai pas pris la fonction list_explore car askip elle ne fonctionne pas**)
+(**La fonction utilisée ici n'est pas AC3 : elle explore naivement les couples qu'on lui donne*)
+  let rec filter_couple_list s list_to_explore ->
+    match list_to_explore with
+    |[] -> s
+    |hd::tl ->
+        let k,l = hd in
+        let evolve, new_s = consistency k l s no_conflict in
+        filter_couple_list new_s tl
+  in
+
+  filter_couple_list s (couple_list filter_nb_planes)
+  
+***)
+        
+    
+    
+  
+
+  
