@@ -73,6 +73,7 @@ let load = fun fic_name ->
       with End_of_file -> not_ended:= false;
     done);
   Printf.printf "\n";
+  flush Pervasives.stdout;
   (cost,no_conflict,!nb_planes);;
 
 let select_bound = fun bound_name no_conflict nb_planes->
