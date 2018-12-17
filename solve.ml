@@ -1,11 +1,35 @@
 let () =
-  (* let fichier = Sys.argv.(1) in *)
+
+  (** options par defaut **)
+  let n = ref 5 in
+  let e = ref 1 in
+  let r = ref 0 in
+  let bound = ref "naive" in
+  let meth = ref "bandb" in
+
+  (** fonction pour parametrer les options **)
+  let set_n = fun nb -> n:=nb in
+  let set_e = fun nb -> e:=nb in
+  let set_r = fun nb -> r:=nb in
+  let set_bound = fun bound_name -> bound:=bound_name in
+  let set_method = fun method_name -> meth:=method_name in
+
+  (** definition des options **)
+  let speclist = [("-n", Arg.Int (set_n), "nombre d'avion (defaut:5)");
+                  ("-e", Arg.Int (set_e), "nombre d'erreur (defaut:1)");
+                  ("-r", Arg.Int (set_r), "graine (defaut:0)");
+                  ("-b", Arg.String (set_bound), "borne ('naive'(defaut) ou 'mij')");
+                  ("-m", Arg.String (set_method), "methode ('bandb'(defaut) ou 'ac3')");
+                 ] in
+  Arg.parse speclist print_endline "Erreur dans le passage des arguments";
+
+  (* on recupere le fichier du cluster a utiliser grace aux options *)
+  let file = "conflicts/cluster_"^(string_of_int !n)^"ac_"^(string_of_int !e)^"err_"^(string_of_int !r)^".txt" in
   (* on charge d'abord le dichier du cluster puis on construit le sommet de l'arbre que l'on insert dans la file a priorite *)
-  (* let fichier = "conflicts.txt" in *)
-  let fichier = String.concat "" ["./conflicts/";Load_data.select_data_file ()] in
-  let cost,no_conflict,nb_planes = Load_data.load fichier in
+
+  let cost,no_conflict,nb_planes = Load_data.load file in
   let s(**s0*) = Modele.init cost nb_planes in
-(** let s = Modele.filter_init s0 no_conflict filter_type *)
+  (** let s = Modele.filter_init s0 no_conflict filter_type *)
 
 (**on applique le filtre initial
 filter_type = 0 : le filtre parcourt toute la liste
@@ -15,8 +39,11 @@ note : filter_type à rajouter dans les arguments de lancement de l'algo (en raj
 
 note : quand on aura implémenté le tri des avions (le plus contraint en premier), le filtrage selon les premiers avions sera celui qui éliminera le plus de solutions*)
 
-  let bound = Load_data.select_bound no_conflict nb_planes in
-  let filter = Load_data.select_method () in
+
+  (* attribution de la borne et de la methode *)
+  let bound = Load_data.select_bound !bound no_conflict nb_planes in
+  let filter = Load_data.select_method !meth in
+
   let priority = bound s cost in
   let q = Pqueue.insert priority s Pqueue.empty in   (* Creer la file initiale *)
   let count = ref 0 in

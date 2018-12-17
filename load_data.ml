@@ -76,37 +76,26 @@ let load = fun fic_name ->
   Printf.printf "\nData loaded !\n\n\n";
   (cost,no_conflict,!nb_planes);;
 
-let select_data_file = fun () ->
-  (** dans cette fonction, on affiche les noms de fichiers disponibles qu'on a prealablement stocke dans un tableau, puis on demande
-      a l'utilisateur de choisir l'un d'eux sur l'entree standard   **)
-  Printf.printf "Choississez un fichier:\n\n";
-  let fic_array = Sys.readdir "conflicts" in
-  Array.fast_sort String.compare fic_array;
-  (for i=0 to (Array.length fic_array)-1 do
-    Printf.printf "%d: %s\n" i fic_array.(i);
-  done);
-  Printf.printf "Votre choix: ";
-  let i = read_int () in
-  fic_array.(i);;
-
-let select_bound = fun no_conflict nb_planes ->
-  (** dans cette fonction, on affiche les bornes disponible  puis on demande
-      a l'utilisateur de choisir l'une d'elles sur l'entree standard   **)
-  Printf.printf "Selectionnez une borne:\n1:borne 1\n2:borne 2\n";
-  Printf.printf "Votre choix:";
-  let i = read_int () in
-  if i = 1 then Priority.get_priority_1
+let select_bound = fun bound_name no_conflict nb_planes->
+  (* selection de la borne *)
+  if (String.equal bound_name "naive") then
+    (Printf.printf "borne: naive\n";
+     Priority.get_priority_1)
   else
-    if i = 2 then Priority.get_priority_2 no_conflict nb_planes
-    else failwith "borne inconnue";;
+    (if (String.equal bound_name "mij") then
+       (Printf.printf "borne: mij\n";
+        Priority.get_priority_2 no_conflict nb_planes)
+     else
+       failwith "unknown bound");;
 
-let select_method = fun () ->
-  (** dans cette fonction, on affiche les bornes disponible  puis on demande
-      a l'utilisateur de choisir l'une d'elles sur l'entree standard   **)
-  Printf.printf "Selectionnez une méthode:\n1:Base\n2:AC3\n";
-  Printf.printf "Votre choix:";
-  let i = read_int () in
-  if i = 1 then Modele.filter
+let select_method = fun method_name ->
+  (* selection de la methode *)
+  if (String.equal method_name "bandb") then
+    (Printf.printf "methode: branch and bound\n";
+     Modele.filter)
   else
-    if i = 2 then Modele.filter_ac3
-    else failwith "méthode inconnue"
+    (if (String.equal method_name "ac3") then
+       (Printf.printf "methode: ac3\n";
+        Modele.filter_ac3)
+     else
+       failwith "unknown method");;

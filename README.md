@@ -1,5 +1,13 @@
 # conflicts_resolution
 
+# ************* OPTIONS DE LANCEMENT ************* #
+# -n : nombre d'avion (5 par defaut)
+# -e : nombre d'erreur (1 par defaut)
+# -r : graine (0 par defaut)
+# -b : borne a utiliser. Au choix "naive" pour la borne naive (par defaut) ou "mij" pour celle utilisant les mij
+# -m : methode a utiliser (filtre). Au choix "bandb" pour le branch and bound (par defaut) ou "ac3" pour ac3
+
+
 # ************* A FAIRE ************* #
 # 1- Essayer d'améliorer filter_ac3 avec un List.filter ?
 # 4- 3ieme algo pour la borne
