@@ -12,7 +12,6 @@ let load = fun fic_name ->
 
   (* cette partie ouvre le fichier texte donné en argument et creer les differentes reference dont on aura besoin,
      qui correspondent au carateristique du fichier de conflits  *)
-  Printf.printf "\nLoading data...\n\n";
   let fic = open_in fic_name in
   let nb_planes = ref 0 in
   let nb_man = ref 0 in
@@ -23,7 +22,7 @@ let load = fun fic_name ->
   'd' ->
       let data = String.split_on_char ' ' line_0 in
       let data = List.tl data in
-      Printf.printf "descriptif du fichier: \n";
+      Printf.printf "\ndescriptif du fichier: \n";
       Printf.printf "Nombre d'avion : %s \n" (List.hd data);
       nb_planes := int_of_string (List.hd data);
       let data = List.tl data in
@@ -73,7 +72,7 @@ let load = fun fic_name ->
         | lettre -> Printf.printf "Type de ligne inconnu : commence par %c \n" lettre;
       with End_of_file -> not_ended:= false;
     done);
-  Printf.printf "\nData loaded !\n\n\n";
+  Printf.printf "\n";
   (cost,no_conflict,!nb_planes);;
 
 let select_bound = fun bound_name no_conflict nb_planes->
@@ -99,3 +98,11 @@ let select_method = fun method_name ->
         Modele.filter_ac3)
      else
        failwith "unknown method");;
+
+let init_s = fun init_filter cost nb_planes no_conflict ->
+  if init_filter then
+    (Printf.printf "filtrage initial: true\n";
+       Modele.filter_init (Modele.init cost nb_planes) no_conflict 0)
+  else
+    (Printf.printf "filtrage initial: true\n\n";
+      Modele.init cost nb_planes);;

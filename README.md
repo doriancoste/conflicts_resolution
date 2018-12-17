@@ -1,11 +1,12 @@
 # conflicts_resolution
 
 # ************* OPTIONS DE LANCEMENT ************* #
-# -n : nombre d'avion (5 par defaut)
-# -e : nombre d'erreur (1 par defaut)
-# -r : graine (0 par defaut)
-# -b : borne a utiliser. Au choix "naive" pour la borne naive (par defaut) ou "mij" pour celle utilisant les mij
-# -m : methode a utiliser (filtre). Au choix "bandb" pour le branch and bound (par defaut) ou "ac3" pour ac3
+# -n -> int : nombre d'avion (5 par defaut)
+# -e -> int: nombre d'erreur (1 par defaut)
+# -r -> int: graine (0 par defaut)
+# -b -> int: borne a utiliser. Au choix "naive" pour la borne naive (par defaut) ou "mij" pour celle utilisant les mij
+# -m -> int: methode a utiliser (filtre). Au choix "bandb" pour le branch and bound (par defaut) ou "ac3" pour ac3
+# -if : filtre intial. active par defaut. Entrez -if pour le desactiver
 
 
 # ************* A FAIRE ************* #

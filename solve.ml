@@ -6,6 +6,7 @@ let () =
   let r = ref 0 in
   let bound = ref "naive" in
   let meth = ref "bandb" in
+  let init_filter = ref true in
 
   (** fonction pour parametrer les options **)
   let set_n = fun nb -> n:=nb in
@@ -20,6 +21,7 @@ let () =
                   ("-r", Arg.Int (set_r), "graine (defaut:0)");
                   ("-b", Arg.String (set_bound), "borne ('naive'(defaut) ou 'mij')");
                   ("-m", Arg.String (set_method), "methode ('bandb'(defaut) ou 'ac3')");
+                  ("-if", Arg.Clear init_filter, "desactive le filtre initial (present par defaut)");
                  ] in
   Arg.parse speclist print_endline "Erreur dans le passage des arguments";
 
@@ -28,6 +30,10 @@ let () =
   (* on charge d'abord le dichier du cluster puis on construit le sommet de l'arbre que l'on insert dans la file a priorite *)
 
   let cost,no_conflict,nb_planes = Load_data.load file in
+
+  let s=Load_data.init_s !init_filter cost nb_planes no_conflict in
+    (**
+       ******************************* avant les trucs de sam
   let s(**s0*) = Modele.init cost nb_planes in
   (** let s = Modele.filter_init s0 no_conflict filter_type *)
 
@@ -38,7 +44,7 @@ filter_type = n > 0 : on filtre uniquement sur les n premiers avions
 note : filter_type à rajouter dans les arguments de lancement de l'algo (en rajoutant un test qui vérifie que c'est un entier positif)
 
 note : quand on aura implémenté le tri des avions (le plus contraint en premier), le filtrage selon les premiers avions sera celui qui éliminera le plus de solutions*)
-
+     **)
 
   (* attribution de la borne et de la methode *)
   let bound = Load_data.select_bound !bound no_conflict nb_planes in

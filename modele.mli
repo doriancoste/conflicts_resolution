@@ -87,3 +87,13 @@ val filter_ac3 : int -> t -> bool array array array array -> t
 
    Enleve les manoeuvres imcompatibles pour tous les avions dans t.compatible_maneuvers en utilisant ac3
  **)
+
+
+val filter_init :  t -> bool array array array array -> int -> t
+(**
+   s : type t -> noeud initial
+   no_conflict: bool array array array array -> no_conflict.(i).(j).(mi).(mj) est true si la manoeuvre mi de l'avion i et mj de l'avion j sont compatibles
+   filter_type: int -> 0 : le filtre parcourt toute la liste ou n > 0 : on filtre uniquement sur les n premiers avions
+
+   retour: type t -> noeud initial filtre
+**)

@@ -132,7 +132,6 @@ let filter_ac3 = fun i s no_conflict ->
   list_explore s (couple_list i)
 
 
-(***
 
 let filter_init = fun s no_conflict filter_type ->
   (*on applique le filtre initial
@@ -156,20 +155,16 @@ exemple : si il y a 20 avions et filter_nb_planes = 1, il y a 19 couples
 
   let couple_list = fun filter_nb_planes ->
     let size = filter_nb_planes*(nb_planes-1) in (*taille de la liste*)
-    List.init size (fun j -> if (j/nb_planes-1)>j%(nb_planes-1) then j/(nb_planes-1),j%(nb_planes-1) else j/(nb_planes-1),(j%(nb_planes-1))+1) in
+    List.init size (fun j -> if (j/nb_planes-1)>(j mod (nb_planes-1)) then j/(nb_planes-1),(j mod (nb_planes-1)) else j/(nb_planes-1),(j mod (nb_planes-1))+1) in
 
 (*On effectue un filtrage récursif avec consistency*)
 (**Je n'ai pas pris la fonction list_explore car askip elle ne fonctionne pas**)
 (**La fonction utilisée ici n'est pas AC3 : elle explore naivement les couples qu'on lui donne*)
-  let rec filter_couple_list s list_to_explore ->
+  let rec filter_couple_list = fun s list_to_explore ->
     match list_to_explore with
     |[] -> s
     |hd::tl ->
         let k,l = hd in
         let evolve, new_s = consistency k l s no_conflict in
-        filter_couple_list new_s tl
-  in
-
+        filter_couple_list new_s tl in
   filter_couple_list s (couple_list filter_nb_planes)
-
-***)
