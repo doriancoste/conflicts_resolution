@@ -19,3 +19,13 @@
 # - Pensez à remplir le .mli quand vous ajoutez une fonction au fichier correspondant
 # - Ne pas push sur le git du code qui ne compile pas
 # - Penser au fonctionnement des fonctions utilisées (modification en place, type de structure, egalite physique)
+
+# ************* TEMPLATE .MLI ************* #
+#Pour chaque fonction, proceder comme suit:
+# (**
+#   prend en arguments
+#   nom_variable : type  -> defintion
+#   [...]
+
+#   valeur de retour :type -> definition
+# **)
