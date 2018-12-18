@@ -45,6 +45,7 @@ val choose_plane_to_instantiate : t -> int
 
 val filter : int -> t -> bool array array array array -> t
 (**
+   prend en arguments
    i : int -> indice de l'avion instancie
    s : type t -> noeud a developper
    no_conflict: bool array array array array -> no_conflict.(i).(j).(mi).(mj) est true si la manoeuvre mi de l'avion i et mj de l'avion j sont compatibles
@@ -57,6 +58,7 @@ val filter : int -> t -> bool array array array array -> t
 
 val union_list : 'a list -> 'a list -> 'a list
 (**
+   prend en arguments
    list_1 : the first list
    list_2 : the second list
 
@@ -67,7 +69,7 @@ val union_list : 'a list -> 'a list -> 'a list
 
 val consistency : int -> int -> t -> bool array array array array -> bool*t
 (**
-
+   prend en arguments
    i : int -> indice de l'avion instancie
    j : int -> indice de l'avion pour lequel on va trier les manoeuvres
    s : type t -> noeud a filter
@@ -79,6 +81,7 @@ val consistency : int -> int -> t -> bool array array array array -> bool*t
 
 val filter_ac3 : int -> t -> bool array array array array -> t
 (**
+   prend en arguments
    i : int -> indice de l'avion instancie
    s : type t -> noeud a developper
    no_conflict: bool array array array array -> no_conflict.(i).(j).(mi).(mj) est true si la manoeuvre mi de l'avion i et mj de l'avion j sont compatibles
@@ -91,9 +94,19 @@ val filter_ac3 : int -> t -> bool array array array array -> t
 
 val filter_init :  t -> bool array array array array -> int -> t
 (**
+   prend en arguments
    s : type t -> noeud initial
    no_conflict: bool array array array array -> no_conflict.(i).(j).(mi).(mj) est true si la manoeuvre mi de l'avion i et mj de l'avion j sont compatibles
    filter_type: int -> 0 : le filtre parcourt toute la liste ou n > 0 : on filtre uniquement sur les n premiers avions
 
    retour: type t -> noeud initial filtre
 **)
+
+
+val no_empty_domain : t -> bool
+(**
+   prend en argument
+   s : type t -> noeud initial
+
+   retour: bool -> true si le domaine ne contient pas d'ensemble vide et false sinon
+ **)

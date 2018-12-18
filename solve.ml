@@ -89,9 +89,18 @@ note : quand on aura implémenté le tri des avions (le plus contraint en premie
       let s_no_filtered = Modele.make dnew_tot (List.tl s.planes_left) in
       let s_new = filter plane_id s_no_filtered no_conflict in
 
-      (* on ajoute sr et s_new a la file q *)
-      let new_q = Pqueue.insert (bound sr cost) sr q in
-      let new_q = Pqueue.insert (bound s_new cost) s_new new_q in
+      (* on teste que sr et snew n'ai pas de domaine vide, donc qu'ils soient realisables puis on ajoute sr et s_new a la file q si besoin *)
+      let add_to_q = fun q not_empty s cost ->
+        if not_empty then
+          Pqueue.insert (bound s cost) s q
+        else
+          q in
+
+      let new_q = add_to_q q (Modele.no_empty_domain sr) sr cost in
+      let new_q = add_to_q new_q (Modele.no_empty_domain s_new) s_new cost in
+
+
+      (* on rapelle solve *)
       solve_rec new_q in
 
   (* on appelle la fonction précédente pour obtenir la solution puis affichage de la solution et du temps d'execution *)

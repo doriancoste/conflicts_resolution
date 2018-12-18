@@ -94,7 +94,7 @@ let filter = fun i s no_conflict ->
 let rec union_list = fun list_1 list_2 ->
 	match list_1 with
 	  [] -> list_2
-	| hd::tl ->if List.mem hd list_2 then union_list tl list_2 else union_list tl (hd::list_2)
+	| hd::tl ->if List.mem hd list_2 then union_list tl list_2 else union_list tl (hd::list_2);;
 
 let consistency = fun i j s no_conflict ->
 	let di = s.compatible_maneuvers.(i) in
@@ -168,3 +168,11 @@ exemple : si il y a 20 avions et filter_nb_planes = 1, il y a 19 couples
         let evolve, new_s = consistency k l s no_conflict in
         filter_couple_list new_s tl in
   filter_couple_list s (couple_list filter_nb_planes)
+
+let no_empty_domain = fun s ->
+  (** cette fonction regarde si un domaine du noeud s est vide, car si c'est le cas, la solution est non realisable **)
+  let no_empty = ref true in
+  let f = fun di ->
+    if di = [] then no_empty:=false in
+  Array.iter f s.compatible_maneuvers;
+  !no_empty
