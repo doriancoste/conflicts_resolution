@@ -63,6 +63,7 @@ note : quand on aura implémenté le tri des avions (le plus contraint en premie
       [] -> (s.compatible_maneuvers, priority)
     | _ ->
       (* on recupere l'id de l'avion a instancier *)
+      (*******************   integrer choose plane to instanciate   ************************)
       let plane_id = List.hd s.Modele.planes_left in
       let d_tot = s.compatible_maneuvers in
 
@@ -86,6 +87,7 @@ note : quand on aura implémenté le tri des avions (le plus contraint en premie
       let sr = Modele.make dr_tot s.planes_left in
 
       (* noeud de l'arbre contenant les branches ou plane_id effectue maneuver_id *)
+      (*******************   enlever l'avion choisis par choose plane to instanciate   ************************)
       let s_no_filtered = Modele.make dnew_tot (List.tl s.planes_left) in
       let s_new = filter plane_id s_no_filtered no_conflict in
 
