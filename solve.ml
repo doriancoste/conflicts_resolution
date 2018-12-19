@@ -32,19 +32,6 @@ let () =
   let cost,no_conflict,nb_planes = Load_data.load file in
 
   let s=Load_data.init_s !init_filter cost nb_planes no_conflict in
-    (**
-       ******************************* avant les trucs de sam
-  let s(**s0*) = Modele.init cost nb_planes in
-  (** let s = Modele.filter_init s0 no_conflict filter_type *)
-
-(**on applique le filtre initial
-filter_type = 0 : le filtre parcourt toute la liste
-filter_type = n > 0 : on filtre uniquement sur les n premiers avions
-
-note : filter_type à rajouter dans les arguments de lancement de l'algo (en rajoutant un test qui vérifie que c'est un entier positif)
-
-note : quand on aura implémenté le tri des avions (le plus contraint en premier), le filtrage selon les premiers avions sera celui qui éliminera le plus de solutions*)
-     **)
 
   (* attribution de la borne et de la methode *)
   let bound = Load_data.select_bound !bound no_conflict nb_planes in
@@ -63,8 +50,10 @@ note : quand on aura implémenté le tri des avions (le plus contraint en premie
       [] -> (s.compatible_maneuvers, priority)
     | _ ->
       (* on recupere l'id de l'avion a instancier *)
+
       (*******************   integrer choose plane to instanciate   ************************)
-      let plane_id = List.hd s.Modele.planes_left in
+      (* let plane_id = List.hd s.Modele.planes_left in *)
+      let plane_id = Modele.choose_plane_to_instantiate s in
       let d_tot = s.compatible_maneuvers in
 
       (* on recupere le numero de manoeuvre que l'on va affecter a plane_id *)
@@ -88,7 +77,8 @@ note : quand on aura implémenté le tri des avions (le plus contraint en premie
 
       (* noeud de l'arbre contenant les branches ou plane_id effectue maneuver_id *)
       (*******************   enlever l'avion choisis par choose plane to instanciate   ************************)
-      let s_no_filtered = Modele.make dnew_tot (List.tl s.planes_left) in
+      (* let s_no_filtered = Modele.make dnew_tot (List.tl s.planes_left) in *)
+      let s_no_filtered = Modele.make dnew_tot (List.filter (fun i -> if i=plane_id then false else true) s.planes_left) in
       let s_new = filter plane_id s_no_filtered no_conflict in
 
       (* on teste que sr et snew n'ai pas de domaine vide, donc qu'ils soient realisables puis on ajoute sr et s_new a la file q si besoin *)
