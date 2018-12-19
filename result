@@ -1,0 +1,3142 @@
+n=[5,10,15] e=[1,2] r=[1-9]
+n=[5 e=[1 r=[1-9]
+n=[5 e=2] r=[1-9]
+n=10 e=[1 r=[1-9]
+n=10 e=2] r=[1-9]
+n=15] e=[1 r=[1-9]
+n=15] e=2] r=[1-9]
+n=5 e=1 r=1-9
+n=5 e=2 r=1-9
+n=10 e=1 r=1-9
+n=10 e=2 r=1-9
+n=15 e=1 r=1-9
+n=15 e=2 r=1-9
+n=5 e=1 r=1-9
+n=5 e=2 r=1-9
+n=10 e=1 r=1-9
+n=10 e=2 r=1-9
+n=15 e=1 r=1-9
+n=15 e=2 r=1-9
+n=5 e=1 r=1
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 5 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+
+Solution trouvée en 0.001267 seconde(s).
+
+
+n=5 e=1 r=2
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 5 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+
+Solution trouvée en 0.001249 seconde(s).
+
+
+n=5 e=1 r=3
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 5 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+
+Solution trouvée en 0.001182 seconde(s).
+
+
+n=5 e=1 r=4
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 5 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+
+Solution trouvée en 0.000230 seconde(s).
+
+
+n=5 e=1 r=5
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 5 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+
+Solution trouvée en 0.000330 seconde(s).
+
+
+n=5 e=1 r=6
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 5 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+
+Solution trouvée en 0.000217 seconde(s).
+
+
+n=5 e=1 r=7
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 5 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+
+Solution trouvée en 0.000214 seconde(s).
+
+
+n=5 e=1 r=8
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 5 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+
+Solution trouvée en 0.000214 seconde(s).
+
+
+n=5 e=1 r=9
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 5 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+
+Solution trouvée en 0.000212 seconde(s).
+
+
+n=5 e=2 r=1
+if
+bnb
+naive
+n=5 e=2 r=2
+if
+bnb
+naive
+n=5 e=2 r=3
+if
+bnb
+naive
+n=5 e=2 r=4
+if
+bnb
+naive
+n=5 e=2 r=5
+if
+bnb
+naive
+n=5 e=2 r=6
+if
+bnb
+naive
+n=5 e=2 r=7
+if
+bnb
+naive
+n=5 e=2 r=8
+if
+bnb
+naive
+n=5 e=2 r=9
+if
+bnb
+naive
+n=10 e=1 r=1
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 10 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 11
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+
+Solution trouvée en 0.001308 seconde(s).
+
+
+n=10 e=1 r=2
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 10 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 2
+nombre de noeuds explorés: 11
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 123
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+
+Solution trouvée en 0.000862 seconde(s).
+
+
+n=10 e=1 r=3
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 10 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 11
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+
+Solution trouvée en 0.000985 seconde(s).
+
+
+n=10 e=1 r=4
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 10 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 2
+nombre de noeuds explorés: 11
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 123
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+
+Solution trouvée en 0.000862 seconde(s).
+
+
+n=10 e=1 r=5
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 10 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 31
+
+L'avion 1 effectue la manoeuvre: 122
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 122
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+
+Solution trouvée en 0.005123 seconde(s).
+
+
+n=10 e=1 r=6
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 10 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 48
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 122
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 122
+L'avion 10 effectue la manoeuvre: 160
+
+Solution trouvée en 0.008746 seconde(s).
+
+
+n=10 e=1 r=7
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 10 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 11
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+
+Solution trouvée en 0.000971 seconde(s).
+
+
+n=10 e=1 r=8
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 10 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 11
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+
+Solution trouvée en 0.000864 seconde(s).
+
+
+n=10 e=1 r=9
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 10 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 2
+nombre de noeuds explorés: 11
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 122
+L'avion 10 effectue la manoeuvre: 160
+
+Solution trouvée en 0.001068 seconde(s).
+
+
+n=10 e=2 r=1
+if
+bnb
+naive
+n=10 e=2 r=2
+if
+bnb
+naive
+n=10 e=2 r=3
+if
+bnb
+naive
+n=10 e=2 r=4
+if
+bnb
+naive
+n=10 e=2 r=5
+if
+bnb
+naive
+n=10 e=2 r=6
+if
+bnb
+naive
+n=10 e=2 r=7
+if
+bnb
+naive
+n=10 e=2 r=8
+if
+bnb
+naive
+n=10 e=2 r=9
+if
+bnb
+naive
+n=15 e=1 r=1
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 207
+
+L'avion 1 effectue la manoeuvre: 123
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 123
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.048856 seconde(s).
+
+
+n=15 e=1 r=2
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 70
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 123
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 123
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 160
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.018605 seconde(s).
+
+
+n=15 e=1 r=3
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 28
+
+L'avion 1 effectue la manoeuvre: 122
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 123
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 160
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.006465 seconde(s).
+
+
+n=15 e=1 r=4
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 80
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 123
+L'avion 6 effectue la manoeuvre: 122
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 160
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.020015 seconde(s).
+
+
+n=15 e=1 r=5
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 82
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 123
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 160
+L'avion 15 effectue la manoeuvre: 122
+
+Solution trouvée en 0.021299 seconde(s).
+
+
+n=15 e=1 r=6
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 9
+nombre de noeuds explorés: 1963
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 123
+L'avion 3 effectue la manoeuvre: 121
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 123
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.579254 seconde(s).
+
+
+n=15 e=1 r=7
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 2
+nombre de noeuds explorés: 16
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 123
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 160
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.002135 seconde(s).
+
+
+n=15 e=1 r=8
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 2
+nombre de noeuds explorés: 16
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 122
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 160
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.001989 seconde(s).
+
+
+n=15 e=1 r=9
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 2
+nombre de noeuds explorés: 17
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 122
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 160
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.002178 seconde(s).
+
+
+n=15 e=2 r=1
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 7
+nombre de noeuds explorés: 467
+
+L'avion 1 effectue la manoeuvre: 83
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 122
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 123
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.125753 seconde(s).
+
+
+n=15 e=2 r=2
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 7
+nombre de noeuds explorés: 1487
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 83
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 123
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 123
+L'avion 14 effectue la manoeuvre: 160
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.461708 seconde(s).
+
+
+n=15 e=2 r=3
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 6
+nombre de noeuds explorés: 55
+
+L'avion 1 effectue la manoeuvre: 123
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 123
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 123
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 160
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.015252 seconde(s).
+
+
+n=15 e=2 r=4
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 80
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 123
+L'avion 6 effectue la manoeuvre: 122
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 160
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.019740 seconde(s).
+
+
+n=15 e=2 r=5
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 7
+nombre de noeuds explorés: 592
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 124
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 123
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.192012 seconde(s).
+
+
+n=15 e=2 r=6
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 12
+nombre de noeuds explorés: 6392
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 123
+L'avion 3 effectue la manoeuvre: 121
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 124
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 1.714425 seconde(s).
+
+
+n=15 e=2 r=7
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 96
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 123
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 123
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 160
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.032273 seconde(s).
+
+
+n=15 e=2 r=8
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 6
+nombre de noeuds explorés: 45
+
+L'avion 1 effectue la manoeuvre: 122
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 122
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 122
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 160
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.014003 seconde(s).
+
+
+n=15 e=2 r=9
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 50
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 123
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 123
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 160
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.019991 seconde(s).
+
+
+n=10 e=1 r=1
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 10 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 11
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+
+Solution trouvée en 0.001239 seconde(s).
+
+
+n=10 e=1 r=2
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 10 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 2
+nombre de noeuds explorés: 11
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 123
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+
+Solution trouvée en 0.000872 seconde(s).
+
+
+n=10 e=1 r=3
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 10 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 11
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+
+Solution trouvée en 0.000864 seconde(s).
+
+
+n=10 e=1 r=4
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 10 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 2
+nombre de noeuds explorés: 11
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 123
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+
+Solution trouvée en 0.000868 seconde(s).
+
+
+n=10 e=1 r=5
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 10 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 31
+
+L'avion 1 effectue la manoeuvre: 122
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 122
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+
+Solution trouvée en 0.005184 seconde(s).
+
+
+n=10 e=1 r=6
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 10 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 48
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 122
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 122
+L'avion 10 effectue la manoeuvre: 160
+
+Solution trouvée en 0.008734 seconde(s).
+
+
+n=10 e=1 r=7
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 10 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 11
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+
+Solution trouvée en 0.001264 seconde(s).
+
+
+n=10 e=1 r=8
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 10 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 11
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+
+Solution trouvée en 0.000866 seconde(s).
+
+
+n=10 e=1 r=9
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 10 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 2
+nombre de noeuds explorés: 11
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 122
+L'avion 10 effectue la manoeuvre: 160
+
+Solution trouvée en 0.001121 seconde(s).
+
+
+n=10 e=2 r=1
+if
+bnb
+naive
+n=10 e=2 r=2
+if
+bnb
+naive
+n=10 e=2 r=3
+if
+bnb
+naive
+n=10 e=2 r=4
+if
+bnb
+naive
+n=10 e=2 r=5
+if
+bnb
+naive
+n=10 e=2 r=6
+if
+bnb
+naive
+n=10 e=2 r=7
+if
+bnb
+naive
+n=10 e=2 r=8
+if
+bnb
+naive
+n=10 e=2 r=9
+if
+bnb
+naive
+n=15 e=1 r=1
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 207
+
+L'avion 1 effectue la manoeuvre: 123
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 123
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.044647 seconde(s).
+
+
+n=15 e=1 r=2
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 70
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 123
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 123
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 160
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.018805 seconde(s).
+
+
+n=15 e=1 r=3
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 28
+
+L'avion 1 effectue la manoeuvre: 122
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 123
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 160
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.005988 seconde(s).
+
+
+n=15 e=1 r=4
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 80
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 123
+L'avion 6 effectue la manoeuvre: 122
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 160
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.024045 seconde(s).
+
+
+n=15 e=1 r=5
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 82
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 123
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 160
+L'avion 15 effectue la manoeuvre: 122
+
+Solution trouvée en 0.021373 seconde(s).
+
+
+n=15 e=1 r=6
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 9
+nombre de noeuds explorés: 1963
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 123
+L'avion 3 effectue la manoeuvre: 121
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 123
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.534170 seconde(s).
+
+
+n=15 e=1 r=7
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 2
+nombre de noeuds explorés: 16
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 123
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 160
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.002543 seconde(s).
+
+
+n=15 e=1 r=8
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 2
+nombre de noeuds explorés: 16
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 122
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 160
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.001948 seconde(s).
+
+
+n=15 e=1 r=9
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 2
+nombre de noeuds explorés: 17
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 122
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 160
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.002186 seconde(s).
+
+
+n=15 e=2 r=1
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 7
+nombre de noeuds explorés: 467
+
+L'avion 1 effectue la manoeuvre: 83
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 122
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 123
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.128423 seconde(s).
+
+
+n=15 e=2 r=2
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 7
+nombre de noeuds explorés: 1487
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 83
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 123
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 123
+L'avion 14 effectue la manoeuvre: 160
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.460632 seconde(s).
+
+
+n=15 e=2 r=3
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 6
+nombre de noeuds explorés: 55
+
+L'avion 1 effectue la manoeuvre: 123
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 123
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 123
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 160
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.015369 seconde(s).
+
+
+n=15 e=2 r=4
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 80
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 123
+L'avion 6 effectue la manoeuvre: 122
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 160
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.021117 seconde(s).
+
+
+n=15 e=2 r=5
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 7
+nombre de noeuds explorés: 592
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 124
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 123
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.222843 seconde(s).
+
+
+n=15 e=2 r=6
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 12
+nombre de noeuds explorés: 6392
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 123
+L'avion 3 effectue la manoeuvre: 121
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 124
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 1.962820 seconde(s).
+
+
+n=15 e=2 r=7
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 96
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 123
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 123
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 160
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.035056 seconde(s).
+
+
+n=15 e=2 r=8
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 6
+nombre de noeuds explorés: 45
+
+L'avion 1 effectue la manoeuvre: 122
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 122
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 122
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 160
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.017324 seconde(s).
+
+
+n=15 e=2 r=9
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 50
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 123
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 123
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 160
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.018545 seconde(s).
+
+
+n=5 e=1 r=1
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 5 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+
+Solution trouvée en 0.001927 seconde(s).
+
+
+n=5 e=1 r=2
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 5 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+
+Solution trouvée en 0.001435 seconde(s).
+
+
+n=5 e=1 r=3
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 5 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+
+Solution trouvée en 0.001366 seconde(s).
+
+
+n=5 e=1 r=4
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 5 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+
+Solution trouvée en 0.000223 seconde(s).
+
+
+n=5 e=1 r=5
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 5 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+
+Solution trouvée en 0.000213 seconde(s).
+
+
+n=5 e=1 r=6
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 5 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+
+Solution trouvée en 0.000217 seconde(s).
+
+
+n=5 e=1 r=7
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 5 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+
+Solution trouvée en 0.000212 seconde(s).
+
+
+n=5 e=1 r=8
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 5 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+
+Solution trouvée en 0.000314 seconde(s).
+
+
+n=5 e=1 r=9
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 5 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+
+Solution trouvée en 0.000214 seconde(s).
+
+
+n=10 e=1 r=1
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 10 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 11
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+
+Solution trouvée en 0.001998 seconde(s).
+
+
+n=10 e=1 r=2
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 10 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 2
+nombre de noeuds explorés: 11
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 123
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+
+Solution trouvée en 0.000879 seconde(s).
+
+
+n=10 e=1 r=3
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 10 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 11
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+
+Solution trouvée en 0.000868 seconde(s).
+
+
+n=10 e=1 r=4
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 10 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 2
+nombre de noeuds explorés: 11
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 123
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+
+Solution trouvée en 0.000863 seconde(s).
+
+
+n=10 e=1 r=5
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 10 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 31
+
+L'avion 1 effectue la manoeuvre: 122
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 122
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+
+Solution trouvée en 0.005092 seconde(s).
+
+
+n=10 e=1 r=6
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 10 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 48
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 122
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 122
+L'avion 10 effectue la manoeuvre: 160
+
+Solution trouvée en 0.008912 seconde(s).
+
+
+n=10 e=1 r=7
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 10 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 11
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+
+Solution trouvée en 0.000976 seconde(s).
+
+
+n=10 e=1 r=8
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 10 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 11
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+
+Solution trouvée en 0.000940 seconde(s).
+
+
+n=10 e=1 r=9
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 10 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 2
+nombre de noeuds explorés: 11
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 122
+L'avion 10 effectue la manoeuvre: 160
+
+Solution trouvée en 0.001074 seconde(s).
+
+
+n=15 e=1 r=1
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 207
+
+L'avion 1 effectue la manoeuvre: 123
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 123
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.053703 seconde(s).
+
+
+n=15 e=1 r=2
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 70
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 123
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 123
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 160
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.017943 seconde(s).
+
+
+n=15 e=1 r=3
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 28
+
+L'avion 1 effectue la manoeuvre: 122
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 123
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 160
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.006904 seconde(s).
+
+
+n=15 e=1 r=4
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 80
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 123
+L'avion 6 effectue la manoeuvre: 122
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 160
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.029126 seconde(s).
+
+
+n=15 e=1 r=5
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 82
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 123
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 160
+L'avion 15 effectue la manoeuvre: 122
+
+Solution trouvée en 0.021334 seconde(s).
+
+
+n=15 e=1 r=6
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 9
+nombre de noeuds explorés: 1963
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 123
+L'avion 3 effectue la manoeuvre: 121
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 123
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.526719 seconde(s).
+
+
+n=15 e=1 r=7
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 2
+nombre de noeuds explorés: 16
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 123
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 160
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.003097 seconde(s).
+
+
+n=15 e=1 r=8
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 2
+nombre de noeuds explorés: 16
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 160
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 122
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 160
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.002052 seconde(s).
+
+
+n=15 e=1 r=9
+if
+bnb
+naive
+
+descriptif du fichier: 
+Nombre d'avion : 15 
+Nombre de manoeuvre : 161 
+d0 max : 4 
+d1 max : 5 
+alpha max : 11 
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 2
+nombre de noeuds explorés: 17
+
+L'avion 1 effectue la manoeuvre: 160
+L'avion 2 effectue la manoeuvre: 160
+L'avion 3 effectue la manoeuvre: 122
+L'avion 4 effectue la manoeuvre: 160
+L'avion 5 effectue la manoeuvre: 160
+L'avion 6 effectue la manoeuvre: 160
+L'avion 7 effectue la manoeuvre: 160
+L'avion 8 effectue la manoeuvre: 160
+L'avion 9 effectue la manoeuvre: 160
+L'avion 10 effectue la manoeuvre: 160
+L'avion 11 effectue la manoeuvre: 160
+L'avion 12 effectue la manoeuvre: 160
+L'avion 13 effectue la manoeuvre: 160
+L'avion 14 effectue la manoeuvre: 160
+L'avion 15 effectue la manoeuvre: 160
+
+Solution trouvée en 0.002469 seconde(s).
+
+
