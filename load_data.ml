@@ -22,18 +22,24 @@ let load = fun fic_name ->
   'd' ->
       let data = String.split_on_char ' ' line_0 in
       let data = List.tl data in
+      (* ces lignes en commentaires affiches les caractéristiques du fichier *)
+      (*
       Printf.printf "\ndescriptif du fichier: \n";
       Printf.printf "Nombre d'avion : %s \n" (List.hd data);
+      *)
       nb_planes := int_of_string (List.hd data);
       let data = List.tl data in
-      Printf.printf "Nombre de manoeuvre : %s \n" (List.hd data);
+      (* ces lignes en commentaires affiches les caractéristiques du fichier *)
+      (*Printf.printf "Nombre de manoeuvre : %s \n" (List.hd data);*)
       nb_man := int_of_string (List.hd data);
-      let data = List.tl data in
+      (* ces lignes en commentaires affiches les caractéristiques du fichier *)
+      (* let data = List.tl data in
       Printf.printf "d0 max : %s \n" (List.hd data);
       let data = List.tl data in
       Printf.printf "d1 max : %s \n" (List.hd data);
       let data = List.tl data in
-      Printf.printf "alpha max : %s \n" (List.hd data);
+      Printf.printf "alpha max : %s \n" (List.hd data);*)
+
   | lettre -> (Printf.printf "Type de premiere ligne inconnu : commence par %c \n" lettre));
 
   (* nous avons maintenant les dimension du probleme, on peut creer les elements cost et no_conflict que nous allons retourner *)
