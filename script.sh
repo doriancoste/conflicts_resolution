@@ -12,11 +12,22 @@ fi
 
 for n in 5 10 15
 do
-	for e in 1
+	case $n in
+	"5" | "10" )
+		e_list="1";;
+	"15" | "20")
+		e_list="1 2 3";;
+	"25")
+		e_list="1";;
+	* )
+		echo "Erreur n"
+		exit 1
+	esac
+	for e in $e_list
 	do
-		for r in 1 2 3 4 5 6 7 8 9
+		for r in 0 1 2 3 4 5 6 7 8 9
 		do
-			#echo "n=$n e=$e r=$r" >> result
+			#echo "n=$n e=$e r=$r" 
 			if [ $1 = "pas_fi" ]
 			then
 				./conflicts_resolution -n $n -e $e -r $r -fi -m $2 -b $3 >> result
