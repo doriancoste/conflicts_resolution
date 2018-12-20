@@ -47,8 +47,14 @@ let build_mij_list = fun nb_planes d_tot no_conflict cost ->
      for j=i+1 to nb_planes-1 do
       mij_list:= (i,j,(find_mij i j d_tot no_conflict cost))::!mij_list;
     done
-  done);
-  !mij_list;;
+   done);
+
+   let comp = fun triple1 triple2 ->
+     let _,_,a = triple1 in
+     let _,_,b = triple2 in
+     compare b a in
+
+    List.sort comp !mij_list;;
 
 let lower_bound = fun mij_list nb_planes ->
   (** cette fonction s'applique a mij_list afin de renvoyer la borne inf = la priorite d'un noeud **)
@@ -71,5 +77,5 @@ let get_priority_2 = fun no_conflict nb_planes s cost ->
   (**
   cette fonction utilise les fonctions precedente et renvoie la priorite du noeud s en utilisant le dual du probleme
    **)
-  let mij_list = List.sort compare (build_mij_list nb_planes s.Modele.compatible_maneuvers no_conflict cost) in
+  let mij_list = build_mij_list nb_planes s.Modele.compatible_maneuvers no_conflict cost in
   lower_bound mij_list nb_planes;;

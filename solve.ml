@@ -98,7 +98,6 @@ let () =
   (* on appelle la fonction précédente pour obtenir la solution puis affichage de la solution et du temps d'execution *)
   let maneuvers_sol,cost_tot = solve_rec q in
   let passed_time = Sys.time () -. start in
-
   (* la ligne ci dessous affiche le cout de la solution*)
   Printf.printf "cout de la solution: %d\nnombre de noeuds explorés: %d\n\n" cost_tot !count;
 
@@ -107,5 +106,5 @@ let () =
   (for i=0 to nb_planes-1 do
     Printf.printf "L'avion %d effectue la manoeuvre: %d\n" (i+1) (List.hd maneuvers_sol.(i));
     done);
-  *)
+*)
   Printf.printf "\nSolution trouvée en %f seconde(s).\n\n\n" passed_time;;
