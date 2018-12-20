@@ -31,28 +31,29 @@ let () =
 
   let cost,no_conflict,nb_planes = Load_data.load file in
 
+  (* on creer le sommet de l'arbre *)
   let s=Load_data.init_s !init_filter cost nb_planes no_conflict in
 
   (* attribution de la borne et de la methode *)
   let bound = Load_data.select_bound !bound no_conflict nb_planes in
   let filter = Load_data.select_method !meth in
 
+  (* Creer la file initiale *)
   let priority = bound s cost in
-  let q = Pqueue.insert priority s Pqueue.empty in   (* Creer la file initiale *)
+  let q = Pqueue.insert priority s Pqueue.empty in
   let count = ref 0 in
-  let start = Sys.time () in
   (* on utilise une fonction récursive qui va depiler les elements de q jusqu'a trouver une solution, en ajoutant les voisin a q *)
   let rec solve_rec = fun q ->
     count:=!count+1;
     let priority, s, q = Pqueue.extract q in
     match s.Modele.planes_left with
-    (* plus d'avions a instancier = sol trouvee *)
+    (* plus d'avions a instancier => sol trouvee *)
       [] -> (s.compatible_maneuvers, priority)
     | _ ->
       (* on recupere l'id de l'avion a instancier *)
 
-      (*******************   integrer choose plane to instanciate   ************************)
       (* let plane_id = List.hd s.Modele.planes_left in *)
+      (*******************   integrer choose plane to instanciate   ************************)
       let plane_id = Modele.choose_plane_to_instantiate s in
       let d_tot = s.compatible_maneuvers in
 
@@ -76,9 +77,9 @@ let () =
       let sr = Modele.make dr_tot s.planes_left in
 
       (* noeud de l'arbre contenant les branches ou plane_id effectue maneuver_id *)
-      (*******************   enlever l'avion choisis par choose plane to instanciate   ************************)
       (* let s_no_filtered = Modele.make dnew_tot (List.tl s.planes_left) in *)
-      let s_no_filtered = Modele.make dnew_tot (List.filter (fun i -> if i=plane_id then false else true) s.planes_left) in
+      (*******************   enlever l'avion choisis par choose_plane_to_instanciate   ************************)
+      let s_no_filtered = Modele.make dnew_tot (List.filter (fun i -> i!=plane_id) s.planes_left) in
       let s_new = filter plane_id s_no_filtered no_conflict in
 
       (* on teste que sr et snew n'ai pas de domaine vide, donc qu'ils soient realisables puis on ajoute sr et s_new a la file q si besoin *)
@@ -96,6 +97,7 @@ let () =
       solve_rec new_q in
 
   (* on appelle la fonction précédente pour obtenir la solution puis affichage de la solution et du temps d'execution *)
+  let start = Sys.time () in
   let maneuvers_sol,cost_tot = solve_rec q in
   let passed_time = Sys.time () -. start in
   (* la ligne ci dessous affiche le cout de la solution*)
