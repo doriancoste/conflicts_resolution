@@ -69,3 +69,11 @@ val filter_ac3 : int -> t -> bool array array array array -> t
 
    Enleve les manoeuvres imcompatibles pour tous les avions dans t.compatible_maneuvers en utilisant ac3
  **)
+
+val no_empty_domain : t -> bool
+(**
+   prend en argument
+   s : type t -> noeud initial
+
+   retour: bool -> true si le domaine ne contient pas d'ensemble vide et false sinon
+ **)

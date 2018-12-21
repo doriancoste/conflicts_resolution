@@ -18,10 +18,6 @@ let find_mij = fun i j d_tot no_conflict cost ->
   cette fonction calcule mij pour i et j fixes
     **)
 
-  (* fonction intermediare permettant de calculer le min de deux valeurs *)
-  let cost_min = fun a b ->
-    if a<=b then b else a in
-
   (* on creer une reference vers notre mij potentiel *)
   let mij = ref max_int in
 
@@ -33,12 +29,12 @@ let find_mij = fun i j d_tot no_conflict cost ->
     | xi::tail_i ->
       (* cette fonction prend le cout actuel et un xj et renvoie le min du cout actuel et de cout(xi)+cout(xj) *)
       let fonc = fun actual_cost maneuver_j ->
-        if no_conflict.(i).(j).(xi).(maneuver_j) then cost_min actual_cost (cost.(xi)+cost.(maneuver_j))
+        if no_conflict.(i).(j).(xi).(maneuver_j) then min actual_cost (cost.(xi)+cost.(maneuver_j))
         else actual_cost in
 
       (* on applique la fonction precedente a partir de xi sur la liste dj avec un fold_left
       et met a jour mij si besoin *)
-      mij:= cost_min !mij (List.fold_left fonc !mij dj);
+      mij:= min !mij (List.fold_left fonc !mij dj);
       find tail_i dj in
 
   (* on applique les elements precedents pour calculer mij *)
@@ -52,7 +48,12 @@ let build_mij_list = fun nb_planes d_tot no_conflict cost ->
       mij_list:= (i,j,(find_mij i j d_tot no_conflict cost))::!mij_list;
     done
   done);
-  !mij_list;;
+  let comp = fun triple1 triple2 ->
+     let _,_,a = triple1 in
+     let _,_,b = triple2 in
+     compare b a in
+
+    List.sort comp !mij_list;;
 
 let lower_bound = fun mij_list nb_planes ->
   (** cette fonction s'applique a mij_list afin de renvoyer la borne inf = la priorite d'un noeud **)

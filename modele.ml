@@ -115,3 +115,11 @@ let filter_ac3 = fun i s no_conflict ->
       else list_explore new_s tl
   in
   list_explore s (couple_list i)
+
+  let no_empty_domain = fun s ->
+    (** cette fonction regarde si un domaine du noeud s est vide, car si c'est le cas, la solution est non realisable **)
+    let no_empty = ref true in
+    let f = fun di ->
+      if di = [] then no_empty:=false in
+    Array.iter f s.compatible_maneuvers;
+    !no_empty ;;
