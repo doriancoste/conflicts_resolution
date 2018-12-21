@@ -28,19 +28,19 @@ let init = fun cost nb_planes ->
 ;;
 
 
-let get_compatible_maneuvers fun s i ->
+let get_compatible_maneuvers = fun s i ->
 	(** Choppe le tableau des maneuvres compatibles restantes pour l'avion i : Di *)
   s.compatible_maneuvers.(i)
 ;;
 
-let head_compatible_maneuvers fun s i ->
+let head_compatible_maneuvers = fun s i ->
 	(** Choppe la première manoeuvre compatible de la liste. Renvoie l'exception EmptyCompatibleManeuvers si liste vide*)
   match s.compatible_maneuvers.(i) with
   |a::b -> a
   |[] -> raise (EmptyCompatibleManeuvers i)
 ;;
 
-let tail_compatible_maneuvers fun s i ->
+let tail_compatible_maneuvers = fun s i ->
 	(** Choppe les manoeuvres compatible de la liste, avec la première en moins. 
 	Renvoie l'exception EmptyCompatibleManeuvers si liste vide*)
   match s.compatible_maneuvers.(i) with
@@ -49,7 +49,7 @@ let tail_compatible_maneuvers fun s i ->
 ;;
 
 
-let is_empty_planes_left fun s ->
+let is_empty_planes_left = fun s ->
 	(** renvoie true si la liste des avions restants est vide*)
   match s.planes_left with
    [] -> true

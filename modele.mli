@@ -59,7 +59,8 @@ val union_list : 'a list -> 'a list -> 'a list
    retour: the union of the two lists
 
    combiner deux lists et assurer l'unicité des éléments
-**)
+*)
+
 
 val consistency : int -> int -> t -> bool array array array array -> bool*t
 (**
