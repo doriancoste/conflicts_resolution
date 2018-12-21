@@ -3,26 +3,9 @@ type t =
       planes_left: int list };;
 
 exception EmptyCompatibleManeuvers of int;;
-exception EmptyPlanesLeftList;;
-
-let create_list n f =
-  let rec creat_rec nombre list =
-    if (nombre = -1) then list else
-    creat_rec (nombre - 1) ((f nombre) :: list)
-  in
-  creat_rec (n-1) [];;
 
 
-let init cost nb_planes =
-  let nombre_de_manoeuvres = Array.length cost in
-  let liste_di = create_list nombre_de_manoeuvres (fun i -> i) in
 
-  let liste_di_sorted = List.sort (fun i j -> cost.(i)-cost.(j)) liste_di in (*Tri des manoeuvres, la moins chère d'abord*)
-
-  let a = Array.init nb_planes (fun _ -> liste_di_sorted) in
-  let b = create_list nb_planes (fun i -> i) in
-  {compatible_maneuvers= a;
-   planes_left = b };;
 
 let make = fun d_tot planes_left ->
   (*
@@ -31,72 +14,94 @@ planes_left : int list; planes_left contient les numeros d'avion qui n'ont pas e
 retour : type t; represente un noeud
 *)
   {compatible_maneuvers = d_tot; planes_left = planes_left};;
+;;
 
 
+let init = fun cost nb_planes ->
+	(**initialiser un noeud s de type t*)
+  let nombre_de_manoeuvres = Array.length cost in
+  let liste_di = List.init nombre_de_manoeuvres (fun i -> i) in
+  let liste_di_sorted = List.sort (fun i j -> cost.(i)-cost.(j)) liste_di in (*Tri des manoeuvres, la moins chère d'abord*)
+  let d_tot = Array.init nb_planes (fun _ -> liste_di_sorted) in
+  let planes_left = List.init nb_planes (fun i -> i) in
+  make d_tot planes_left
+;;
 
-let get_compatible_maneuvers s i =
-  s.compatible_maneuvers.(i);;
 
-let head_compatible_maneuvers s i =
+let get_compatible_maneuvers fun s i ->
+	(** Choppe le tableau des maneuvres compatibles restantes pour l'avion i : Di *)
+  s.compatible_maneuvers.(i)
+;;
+
+let head_compatible_maneuvers fun s i ->
+	(** Choppe la première manoeuvre compatible de la liste. Renvoie l'exception EmptyCompatibleManeuvers si liste vide*)
   match s.compatible_maneuvers.(i) with
   |a::b -> a
   |[] -> raise (EmptyCompatibleManeuvers i)
 ;;
 
-let tail_compatible_maneuvers s i =
+let tail_compatible_maneuvers fun s i ->
+	(** Choppe les manoeuvres compatible de la liste, avec la première en moins. 
+	Renvoie l'exception EmptyCompatibleManeuvers si liste vide*)
   match s.compatible_maneuvers.(i) with
   |a::b -> b
   |[] -> raise (EmptyCompatibleManeuvers i)
 ;;
 
-let pop_planes_left s =
-  match s.planes_left with
-   a::b -> b
-  |[] -> raise EmptyPlanesLeftList
-;;
 
-let is_empty_planes_left s =
+let is_empty_planes_left fun s ->
+	(** renvoie true si la liste des avions restants est vide*)
   match s.planes_left with
    [] -> true
   |a::b -> false
 ;;
 
-let choose_plane_to_instantiate s = (*2ième essaie*)
- let rec cpti_aux l (* liste des avions *) chosen_plane (* avion choisi *) domain_size_chosen_plane (* nombre de manoeuvres possibles pour l’avion choisi *) i (* pour la i-ème liste de l’array t.compatible_maneuvers *) =
-   match l with  (* on parlours la liste des avions restants *)
-   [] -> chosen_plane
-   | hd::tl -> if (List.length s.compatible_maneuvers.(i)) < domain_size_chosen_plane (* la taille de la liste des manoeuvres possibles de l’avion i < taille pour l’avion choisi *)
-   then cpti_aux tl hd (List.length s.compatible_maneuvers.(i)) (i+1) (* l'identifiant de l'avion choisi est maintenant hd, avec sa domain_size correspondante on continue avec la nouvelle liste d'avions restants et la liste suivante de maneuvres compatibles*)
-   else cpti_aux tl chosen_plane domain_size_chosen_plane (i+1) (* l'avion choisi ne change pas, on continue avec la nouvelle liste d'avions restants et la liste suivante de maneuvres compatibles *)
- in
- cpti_aux s.planes_left (-1) max_int 0 (*  *)
- ;;
+
+let choose_plane_to_instantiate = fun s -> (*2ième essaie*)
+	(**
+	Choisi l'avion à instancier. Ce sera celui ayant le moins de manoeuvres possibles.
+ 	Pars d'un noeud s de type t et renvoie l'identifiant int de l'avion à instancier.
+	*)
+ 	let rec cpti_aux  = fun l chosen_plane  domain_size_chosen_plane i ->
+  	match l with  
+   	[] -> chosen_plane
+   	| hd::tl -> 
+   		if (List.length s.compatible_maneuvers.(i)) < domain_size_chosen_plane 
+   		then cpti_aux tl hd (List.length s.compatible_maneuvers.(i)) (i+1)  				
+   		else cpti_aux tl chosen_plane domain_size_chosen_plane (i+1) 
+ 	in
+ 	cpti_aux s.planes_left (-1) max_int 0 (*  *)
+;;
 
 
 let filter = fun i s no_conflict ->
-  (* on creer une fonction qui a partir de i, de j, de maneuveri, de la matrice des conflits et de la liste
-     des manoeuvres possibes pour dj, renvoie la liste des maneuvre possible pour dj sachant que xi=maneuveri *)
-
-  (* cette fonction sera notre prédicat applique aux dj pour les filter. Elle renvoie vrai si les maneuvres sont
-  compatible et non sinon *)
+	(**Enlève les manoeuvres imcompatibles pour tous les avions dans t.compatible_maneuvers en utilisant le tableau des conflits*)
   let predicate = fun j maneuver_j ->
+  	(* cette fonction sera notre prédicat applique aux dj pour les filter. 
+  	Elle renvoie vrai si les maneuvres sont compatible et non sinon *)
     List.exists (fun maneuver_i -> no_conflict.(i).(j).(maneuver_i).(maneuver_j)) s.compatible_maneuvers.(i) in
-
-  (* cette fonction sera appliquee aux avions restants pour réduire leurs domaines en fonctions de la compatibilité avec
-    variable instanciee*)
+    
   let iter_on_planes_left = fun j ->
+  	(* cette fonction sera appliquee aux avions restants pour réduire leurs domaines 
+  	en fonctions de la compatibilité avec variable instanciee*)
     Array.set s.compatible_maneuvers j (List.filter (predicate j) s.compatible_maneuvers.(j)) in
-
-  (* on iter notre fonction sur les avions non instancies et on renvoie s *)
+    
   List.iter iter_on_planes_left s.planes_left;
-  s;;
+  s
+;;
+
 
 let rec union_list = fun list_1 list_2 ->
+	(**combiner deux lists et assurer l'unicité des éléments*)
 	match list_1 with
 	  [] -> list_2
-	| hd::tl ->if List.mem hd list_2 then union_list tl list_2 else union_list tl (hd::list_2);;
+	| hd::tl ->if List.mem hd list_2 then union_list tl list_2 else union_list tl (hd::list_2)
+;;
+
 
 let consistency = fun i j s no_conflict ->
+	(**choisit des manoeuvres Dj de l'avion j qui sont compatible avec au moins 1 manoeuvre de l'avion i 
+	et indicat si des manoeuvres Dj de l'avion j evolve *)
 	let di = s.compatible_maneuvers.(i) in
 	let dj = s.compatible_maneuvers.(j) in
 	let evolve = ref false in
@@ -117,6 +122,7 @@ let consistency = fun i j s no_conflict ->
   !evolve, s
 
 let filter_ac3 = fun i s no_conflict ->
+  (** Enleve les manoeuvres imcompatibles pour tous les avions dans t.compatible_maneuvers en utilisant ac3*)
   let nb_planes = Array.length s.compatible_maneuvers in
   let couple_list = fun i ->
     List.init (nb_planes-1) (fun j -> if i>j then i,j else i,j+1) in
@@ -135,31 +141,29 @@ let filter_ac3 = fun i s no_conflict ->
 
 let filter_init = fun s no_conflict filter_type ->
   (*on applique le filtre initial
-filter_type = 0 : le filtre parcourt toute la liste
-filter_type = n > 0 : on filtre uniquement sur les n premiers avions*)
+	filter_type = 0 : le filtre parcourt toute la liste
+	filter_type = n > 0 : on filtre uniquement sur les n premiers avions*)
 
   let nb_planes = Array.length s.compatible_maneuvers in
-
-(*on va effectuer le filtrage initial selon les filter_nb_planes premiers avions.
+	
+	(*on va effectuer le filtrage initial selon les filter_nb_planes premiers avions.
   si on a rentré 0 dans filter_type, on filtre selon tous les avions*)
-
   let filter_nb_planes = if filter_type=0 then nb_planes
   else if filter_type > nb_planes then nb_planes else filter_type in
 
-(*on initialise la liste des couples d'avions à filtrer.
+	(*on initialise la liste des couples d'avions à filtrer.
   il y a (filter_nb_planes-1) * nb_planes couples à traiter :
-exemple : si il y a 20 avions et filter_nb_planes = 1, il y a 19 couples
+	exemple : si il y a 20 avions et filter_nb_planes = 1, il y a 19 couples
   si filter_nb_planes = 2, il y en a 19 + 19, en fait 19 pour chaque avion selon lequel on filtre*)
-(*La liste, dans le 2e exemple, est : (1,2) (1,3) ... (1,20) (2,1) (2,3) (2,4) ... (2,20)*)
-(**A tester ! Je ne peux pas tester la fonction List.init*)
-
+	(*La liste, dans le 2e exemple, est : (1,2) (1,3) ... (1,20) (2,1) (2,3) (2,4) ... (2,20)*)
+	(*A tester ! Je ne peux pas tester la fonction List.init*)
   let couple_list = fun filter_nb_planes ->
     let size = filter_nb_planes*(nb_planes-1) in (*taille de la liste*)
-    List.init size (fun j -> if (j/nb_planes-1)>(j mod (nb_planes-1)) then j/(nb_planes-1),(j mod (nb_planes-1)) else j/(nb_planes-1),(j mod (nb_planes-1))+1) in
+    List.init size (fun j -> if (j/nb_planes-1)>(j mod (nb_planes-1)) then j/(nb_planes-1) ,(j mod (nb_planes-1)) else j/(nb_planes-1),(j mod (nb_planes-1))+1) in
 
-(*On effectue un filtrage récursif avec consistency*)
-(**Je n'ai pas pris la fonction list_explore car askip elle ne fonctionne pas**)
-(**La fonction utilisée ici n'est pas AC3 : elle explore naivement les couples qu'on lui donne*)
+	(*On effectue un filtrage récursif avec consistency*)	
+	(*Je n'ai pas pris la fonction list_explore car askip elle ne fonctionne pas**)
+	(*La fonction utilisée ici n'est pas AC3 : elle explore naivement les couples qu'on lui donne*)
   let rec filter_couple_list = fun s list_to_explore ->
     match list_to_explore with
     |[] -> s
