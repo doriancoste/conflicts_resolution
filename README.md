@@ -1,32 +1,13 @@
 # conflicts_resolution
 
-# ************* OPTIONS DE LANCEMENT ************* #
-# -n -> int : nombre d'avion (5 par defaut)
-# -e -> int: nombre d'erreur (1 par defaut)
-# -r -> int: graine (0 par defaut)
-# -b -> int: borne a utiliser. Au choix "naive" pour la borne naive (par defaut) ou "mij" pour celle utilisant les mij
-# -m -> int: methode a utiliser (filtre). Au choix "bandb" pour le branch and bound (par defaut) ou "ac3" pour ac3
-# -if : filtre intial. active par defaut. Entrez -if pour le desactiver
-
-
 # ************* A FAIRE ************* #
-# 1- Essayer d'améliorer filter_ac3 avec un List.filter ?
+# 1- Ameliorer Filter ac3 avec un List.filter --> Dorian
+# 2- fonction qui choisie l'avion a instancier (on prendra l'avion qui a le domaine le plus restreint possible)(retourne un int !!) --> Lilian
+# 3- Methode pour assurer l'unicité des couples dans ac3 --> Zhen
 # 4- 3ieme algo pour la borne
-# 5- Faire un filtre initial sur ac3 qui a s0->s0s_no_filtered -> Sam
-
-# 6- Vérifiez qu'une des variables du domaine n'est pas vide avant d'ajouter le nouveau "s" à la file; -> Zhen
+# 5- Faire un filtre initial sur ac3 qui a s0->s0s_no_filtered
 
 # ************* ATTENTION ************* #
 # - Pensez à remplir le .mli quand vous ajoutez une fonction au fichier correspondant
 # - Ne pas push sur le git du code qui ne compile pas
 # - Penser au fonctionnement des fonctions utilisées (modification en place, type de structure, egalite physique)
-
-# ************* TEMPLATE .MLI ************* #
-#Pour chaque fonction, proceder comme suit:
-# (**
-#   prend en arguments
-#   nom_variable : type  -> defintion
-#   [...]
-
-#   valeur de retour :type -> definition
-# **)

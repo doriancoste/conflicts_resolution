@@ -1,16 +1,16 @@
 val get_priority_1 : Modele.t -> int array -> int
-(**
-   prend en arguments
-   s : type t -> noeud a traiter
-   cost: int array -> cost.(mi) contient le cout de la manoeuvre mi
+(**Calcule la priorite associee à l'objet t a partir de la liste des couts
+   noeud s : type t
+   liste des couts cost : int array
+   valeur de retour : priority : int
 
-   valeur de retour :int -> priorite definie comme etant la somme des min(xi), xi appartement a compatibles_maneuvers.(i)
+   Dans cette fonction, la priorite est definie comme etant la somme des min(xi), xi appartement a compatibles_maneuvers.(i)
  **)
 
 
 val find_mij : int -> int -> int list array -> bool array array array array -> int array -> int
 (**
-   prend en arguments
+   prend en argument
    i: int -> indice ieme avion
    j: int -> indice du jieme avion
    d_tot: int list array -> tableau contenant en i la liste des maneuvres possibles pour l'avion i
@@ -25,7 +25,7 @@ val find_mij : int -> int -> int list array -> bool array array array array -> i
 
 val build_mij_list : int -> int list array -> bool array array array array -> int array -> (int*int*int) list
 (**
-   prend en arguments
+   prend en argument
    nb_planes : int -> le nombre d'avions
    d_tot: int list array -> tableau contenant en i la liste des maneuvres possibles pour l'avion i
    no_conflict: bool array array array array -> no_conflict.(i).(j).(mi).(mj) est true si la manoeuvre mi de l'avion i et mj de l'avion j sont compatibles
@@ -36,7 +36,7 @@ val build_mij_list : int -> int list array -> bool array array array array -> in
 
 val lower_bound : (int*int*int) list -> int -> int
 (**
-   prend en arguments
+   prend en argument
    mij_list: int list -> voir le retour de la fonction ci-dessus
    nb_planes: int -> nombre d'avions
 
@@ -45,7 +45,6 @@ val lower_bound : (int*int*int) list -> int -> int
 
 val get_priority_2 : bool array array array array -> int -> Modele.t -> int array ->int
   (**
-     prend en arguments
      s : Modele.t -> noeud s
      no_conflict: bool array array array array -> no_conflict.(i).(j).(mi).(mj) est true si la manoeuvre mi de l'avion i et mj de l'avion j sont compatibles
      cost: int array -> cost.(mi) contient le cout de la manoeuvre mi
