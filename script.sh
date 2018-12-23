@@ -10,14 +10,14 @@ then
 fi
 
 
-for n in 5 10 15
+for n in 5 10 15 20 25
 do
 	case $n in
 	"5" | "10" )
 		e_list="1";;
-	"15" | "20")
+	"15")
 		e_list="1 2 3";;
-	"25")
+	"20" | "25")
 		e_list="1";;
 	* )
 		echo "Erreur n"
@@ -27,14 +27,14 @@ do
 	do
 		for r in 0 1 2 3 4 5 6 7 8 9
 		do
-			#echo "n=$n e=$e r=$r"
+			echo "n=$n e=$e r=$r"
 			if [ $1 = "pas_fi" ]
 			then
-				echo "instance $n $e $r">>result.txt
-				./conflicts_resolution -n $n -e $e -r $r -fi -m $2 -b $3 >> result.txt
+				echo "instance $n $e $r">>result_$1_$2_$3.txt
+				./conflicts_resolution.opt -n $n -e $e -r $r -fi -m $2 -b $3 >> result_$1_$2_$3.txt
 			else
-				echo "instance $n $e $r">>result.txt
-				./conflicts_resolution -n $n -e $e -r $r -m $2 -b $3 >> result.txt
+				echo "instance $n $e $r">>result_$1_$2_$3.txt
+				./conflicts_resolution.opt -n $n -e $e -r $r -m $2 -b $3 >> result_$1_$2_$3.txt
 			fi
 		done
 

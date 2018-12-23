@@ -1,0 +1,722 @@
+instance 5 1 0
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+
+Solution trouvée en 0.011679 seconde(s).
+
+
+instance 5 1 1
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+
+Solution trouvée en 0.011640 seconde(s).
+
+
+instance 5 1 2
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+
+Solution trouvée en 0.019209 seconde(s).
+
+
+instance 5 1 3
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+
+Solution trouvée en 0.011329 seconde(s).
+
+
+instance 5 1 4
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+
+Solution trouvée en 0.015475 seconde(s).
+
+
+instance 5 1 5
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+
+Solution trouvée en 0.011125 seconde(s).
+
+
+instance 5 1 6
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+
+Solution trouvée en 0.010109 seconde(s).
+
+
+instance 5 1 7
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+
+Solution trouvée en 0.012477 seconde(s).
+
+
+instance 5 1 8
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+
+Solution trouvée en 0.011439 seconde(s).
+
+
+instance 5 1 9
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+
+Solution trouvée en 0.011113 seconde(s).
+
+
+instance 10 1 0
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 0
+nombre de noeuds explorés: 11
+
+
+Solution trouvée en 0.114699 seconde(s).
+
+
+instance 10 1 1
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 0
+nombre de noeuds explorés: 11
+
+
+Solution trouvée en 0.098286 seconde(s).
+
+
+instance 10 1 2
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 2
+nombre de noeuds explorés: 11
+
+
+Solution trouvée en 0.096208 seconde(s).
+
+
+instance 10 1 3
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 0
+nombre de noeuds explorés: 11
+
+
+Solution trouvée en 0.100071 seconde(s).
+
+
+instance 10 1 4
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 2
+nombre de noeuds explorés: 11
+
+
+Solution trouvée en 0.092821 seconde(s).
+
+
+instance 10 1 5
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 4
+nombre de noeuds explorés: 11
+
+
+Solution trouvée en 0.095738 seconde(s).
+
+
+instance 10 1 6
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 4
+nombre de noeuds explorés: 11
+
+
+Solution trouvée en 0.101471 seconde(s).
+
+
+instance 10 1 7
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 0
+nombre de noeuds explorés: 11
+
+
+Solution trouvée en 0.094843 seconde(s).
+
+
+instance 10 1 8
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 0
+nombre de noeuds explorés: 11
+
+
+Solution trouvée en 0.095865 seconde(s).
+
+
+instance 10 1 9
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 2
+nombre de noeuds explorés: 11
+
+
+Solution trouvée en 0.104250 seconde(s).
+
+
+instance 15 1 0
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 9
+nombre de noeuds explorés: 16
+
+
+Solution trouvée en 0.327854 seconde(s).
+
+
+instance 15 1 1
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 4
+nombre de noeuds explorés: 16
+
+
+Solution trouvée en 0.315957 seconde(s).
+
+
+instance 15 1 2
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 4
+nombre de noeuds explorés: 17
+
+
+Solution trouvée en 0.352799 seconde(s).
+
+
+instance 15 1 3
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 4
+nombre de noeuds explorés: 16
+
+
+Solution trouvée en 0.337295 seconde(s).
+
+
+instance 15 1 4
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 4
+nombre de noeuds explorés: 18
+
+
+Solution trouvée en 0.371812 seconde(s).
+
+
+instance 15 1 5
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 4
+nombre de noeuds explorés: 16
+
+
+Solution trouvée en 0.316248 seconde(s).
+
+
+instance 15 1 6
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 9
+nombre de noeuds explorés: 50
+
+
+Solution trouvée en 1.761689 seconde(s).
+
+
+instance 15 1 7
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 2
+nombre de noeuds explorés: 16
+
+
+Solution trouvée en 0.327926 seconde(s).
+
+
+instance 15 1 8
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 2
+nombre de noeuds explorés: 16
+
+
+Solution trouvée en 0.331514 seconde(s).
+
+
+instance 15 1 9
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 2
+nombre de noeuds explorés: 17
+
+
+Solution trouvée en 0.399964 seconde(s).
+
+
+instance 15 2 0
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 13
+nombre de noeuds explorés: 21
+
+
+Solution trouvée en 0.378555 seconde(s).
+
+
+instance 15 2 1
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 7
+nombre de noeuds explorés: 16
+
+
+Solution trouvée en 0.314080 seconde(s).
+
+
+instance 15 2 2
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 7
+nombre de noeuds explorés: 26
+
+
+Solution trouvée en 0.540619 seconde(s).
+
+
+instance 15 2 3
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 6
+nombre de noeuds explorés: 33
+
+
+Solution trouvée en 0.907943 seconde(s).
+
+
+instance 15 2 4
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 4
+nombre de noeuds explorés: 18
+
+
+Solution trouvée en 0.358131 seconde(s).
+
+
+instance 15 2 5
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 7
+nombre de noeuds explorés: 22
+
+
+Solution trouvée en 0.480144 seconde(s).
+
+
+instance 15 2 6
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 12
+nombre de noeuds explorés: 37
+
+
+Solution trouvée en 1.015695 seconde(s).
+
+
+instance 15 2 7
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 4
+nombre de noeuds explorés: 18
+
+
+Solution trouvée en 0.377239 seconde(s).
+
+
+instance 15 2 8
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 6
+nombre de noeuds explorés: 17
+
+
+Solution trouvée en 0.369204 seconde(s).
+
+
+instance 15 2 9
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 4
+nombre de noeuds explorés: 18
+
+
+Solution trouvée en 0.395006 seconde(s).
+
+
+instance 15 3 0
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 18
+nombre de noeuds explorés: 53
+
+
+Solution trouvée en 0.794402 seconde(s).
+
+
+instance 15 3 1
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 12
+nombre de noeuds explorés: 40
+
+
+Solution trouvée en 1.227839 seconde(s).
+
+
+instance 15 3 2
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 12
+nombre de noeuds explorés: 18
+
+
+Solution trouvée en 0.359015 seconde(s).
+
+
+instance 15 3 3
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 7
+nombre de noeuds explorés: 21
+
+
+Solution trouvée en 0.535311 seconde(s).
+
+
+instance 15 3 4
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 6
+nombre de noeuds explorés: 22
+
+
+Solution trouvée en 0.437819 seconde(s).
+
+
+instance 15 3 5
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 9
+nombre de noeuds explorés: 18
+
+
+Solution trouvée en 0.313517 seconde(s).
+
+
+instance 15 3 6
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 18
+nombre de noeuds explorés: 105
+
+
+Solution trouvée en 4.098418 seconde(s).
+
+
+instance 15 3 7
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 5
+nombre de noeuds explorés: 16
+
+
+Solution trouvée en 0.291280 seconde(s).
+
+
+instance 15 3 8
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 7
+nombre de noeuds explorés: 16
+
+
+Solution trouvée en 0.275400 seconde(s).
+
+
+instance 15 3 9
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 7
+nombre de noeuds explorés: 24
+
+
+Solution trouvée en 0.650612 seconde(s).
+
+
+instance 20 1 0
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 12
+nombre de noeuds explorés: 25
+
+
+Solution trouvée en 1.008460 seconde(s).
+
+
+instance 20 1 1
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 4
+nombre de noeuds explorés: 23
+
+
+Solution trouvée en 0.889226 seconde(s).
+
+
+instance 20 1 2
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 27
+nombre de noeuds explorés: 7903
+
+
+Solution trouvée en 423.055723 seconde(s).
+
+
+instance 20 1 3
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 4
+nombre de noeuds explorés: 23
+
+
+Solution trouvée en 0.955030 seconde(s).
+
+
+instance 20 1 4
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 4
+nombre de noeuds explorés: 31
+
+
+Solution trouvée en 1.086202 seconde(s).
+
+
+instance 20 1 5
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 9
+nombre de noeuds explorés: 47
+
+
+Solution trouvée en 1.695844 seconde(s).
+
+
+instance 20 1 6
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 0
+nombre de noeuds explorés: 21
+
+
+Solution trouvée en 0.812461 seconde(s).
+
+
+instance 20 1 7
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 9
+nombre de noeuds explorés: 24
+
+
+Solution trouvée en 0.946325 seconde(s).
+
+
+instance 20 1 8
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 9
+nombre de noeuds explorés: 26
+
+
+Solution trouvée en 1.230261 seconde(s).
+
+
+instance 20 1 9
+
+filtrage initial: true
+borne: mij
+methode: ac3
+cout de la solution: 14
+nombre de noeuds explorés: 456
+
+
+Solution trouvée en 30.051619 seconde(s).
+
+
+instance 25 1 0
+
