@@ -1,0 +1,758 @@
+instance 5 1 0
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+
+Solution trouvée en 0.000038 seconde(s).
+
+
+instance 5 1 1
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+
+Solution trouvée en 0.000051 seconde(s).
+
+
+instance 5 1 2
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+
+Solution trouvée en 0.000981 seconde(s).
+
+
+instance 5 1 3
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+
+Solution trouvée en 0.000902 seconde(s).
+
+
+instance 5 1 4
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+
+Solution trouvée en 0.000051 seconde(s).
+
+
+instance 5 1 5
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+
+Solution trouvée en 0.000043 seconde(s).
+
+
+instance 5 1 6
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+
+Solution trouvée en 0.000052 seconde(s).
+
+
+instance 5 1 7
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+
+Solution trouvée en 0.000038 seconde(s).
+
+
+instance 5 1 8
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+
+Solution trouvée en 0.000037 seconde(s).
+
+
+instance 5 1 9
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+
+Solution trouvée en 0.000047 seconde(s).
+
+
+instance 10 1 0
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 0
+nombre de noeuds explorés: 11
+
+
+Solution trouvée en 0.000837 seconde(s).
+
+
+instance 10 1 1
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 0
+nombre de noeuds explorés: 11
+
+
+Solution trouvée en 0.000501 seconde(s).
+
+
+instance 10 1 2
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 2
+nombre de noeuds explorés: 11
+
+
+Solution trouvée en 0.000646 seconde(s).
+
+
+instance 10 1 3
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 0
+nombre de noeuds explorés: 11
+
+
+Solution trouvée en 0.001287 seconde(s).
+
+
+instance 10 1 4
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 2
+nombre de noeuds explorés: 11
+
+
+Solution trouvée en 0.000827 seconde(s).
+
+
+instance 10 1 5
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 4
+nombre de noeuds explorés: 31
+
+
+Solution trouvée en 0.005268 seconde(s).
+
+
+instance 10 1 6
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 4
+nombre de noeuds explorés: 48
+
+
+Solution trouvée en 0.007162 seconde(s).
+
+
+instance 10 1 7
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 0
+nombre de noeuds explorés: 11
+
+
+Solution trouvée en 0.000652 seconde(s).
+
+
+instance 10 1 8
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 0
+nombre de noeuds explorés: 11
+
+
+Solution trouvée en 0.001081 seconde(s).
+
+
+instance 10 1 9
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 2
+nombre de noeuds explorés: 11
+
+
+Solution trouvée en 0.001213 seconde(s).
+
+
+instance 15 1 0
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 9
+nombre de noeuds explorés: 5499
+
+
+Solution trouvée en 1.306555 seconde(s).
+
+
+instance 15 1 1
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 4
+nombre de noeuds explorés: 207
+
+
+Solution trouvée en 0.031456 seconde(s).
+
+
+instance 15 1 2
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 4
+nombre de noeuds explorés: 70
+
+
+Solution trouvée en 0.013656 seconde(s).
+
+
+instance 15 1 3
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 4
+nombre de noeuds explorés: 28
+
+
+Solution trouvée en 0.005753 seconde(s).
+
+
+instance 15 1 4
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 4
+nombre de noeuds explorés: 80
+
+
+Solution trouvée en 0.014813 seconde(s).
+
+
+instance 15 1 5
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 4
+nombre de noeuds explorés: 82
+
+
+Solution trouvée en 0.020684 seconde(s).
+
+
+instance 15 1 6
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 9
+nombre de noeuds explorés: 1963
+
+
+Solution trouvée en 0.475165 seconde(s).
+
+
+instance 15 1 7
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 2
+nombre de noeuds explorés: 16
+
+
+Solution trouvée en 0.001676 seconde(s).
+
+
+instance 15 1 8
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 2
+nombre de noeuds explorés: 16
+
+
+Solution trouvée en 0.002140 seconde(s).
+
+
+instance 15 1 9
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 2
+nombre de noeuds explorés: 17
+
+
+Solution trouvée en 0.001820 seconde(s).
+
+
+instance 15 2 0
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 13
+nombre de noeuds explorés: 35978
+
+
+Solution trouvée en 9.167667 seconde(s).
+
+
+instance 15 2 1
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 7
+nombre de noeuds explorés: 467
+
+
+Solution trouvée en 0.111968 seconde(s).
+
+
+instance 15 2 2
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 7
+nombre de noeuds explorés: 1487
+
+
+Solution trouvée en 0.328001 seconde(s).
+
+
+instance 15 2 3
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 6
+nombre de noeuds explorés: 55
+
+
+Solution trouvée en 0.011995 seconde(s).
+
+
+instance 15 2 4
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 4
+nombre de noeuds explorés: 80
+
+
+Solution trouvée en 0.015202 seconde(s).
+
+
+instance 15 2 5
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 7
+nombre de noeuds explorés: 592
+
+
+Solution trouvée en 0.158184 seconde(s).
+
+
+instance 15 2 6
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 12
+nombre de noeuds explorés: 6392
+
+
+Solution trouvée en 1.621820 seconde(s).
+
+
+instance 15 2 7
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 4
+nombre de noeuds explorés: 96
+
+
+Solution trouvée en 0.028143 seconde(s).
+
+
+instance 15 2 8
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 6
+nombre de noeuds explorés: 45
+
+
+Solution trouvée en 0.011029 seconde(s).
+
+
+instance 15 2 9
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 4
+nombre de noeuds explorés: 50
+
+
+Solution trouvée en 0.014849 seconde(s).
+
+
+instance 15 3 0
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 18
+nombre de noeuds explorés: 239408
+
+
+Solution trouvée en 182.021968 seconde(s).
+
+
+instance 15 3 1
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 12
+nombre de noeuds explorés: 4233
+
+
+Solution trouvée en 1.305163 seconde(s).
+
+
+instance 15 3 2
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 12
+nombre de noeuds explorés: 49345
+
+
+Solution trouvée en 11.864076 seconde(s).
+
+
+instance 15 3 3
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 7
+nombre de noeuds explorés: 107
+
+
+Solution trouvée en 0.026728 seconde(s).
+
+
+instance 15 3 4
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 6
+nombre de noeuds explorés: 239
+
+
+Solution trouvée en 0.056348 seconde(s).
+
+
+instance 15 3 5
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 9
+nombre de noeuds explorés: 1361
+
+
+Solution trouvée en 0.373479 seconde(s).
+
+
+instance 15 3 6
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 18
+nombre de noeuds explorés: 22010
+
+
+Solution trouvée en 6.775808 seconde(s).
+
+
+instance 15 3 7
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 5
+nombre de noeuds explorés: 141
+
+
+Solution trouvée en 0.039010 seconde(s).
+
+
+instance 15 3 8
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 7
+nombre de noeuds explorés: 42
+
+
+Solution trouvée en 0.010260 seconde(s).
+
+
+instance 15 3 9
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 7
+nombre de noeuds explorés: 260
+
+
+Solution trouvée en 0.111586 seconde(s).
+
+
+instance 20 1 0
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 12
+nombre de noeuds explorés: 5694
+
+
+Solution trouvée en 2.454993 seconde(s).
+
+
+instance 20 1 1
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 4
+nombre de noeuds explorés: 51
+
+
+Solution trouvée en 0.027353 seconde(s).
+
+
+instance 20 1 2
+
+instance 20 1 3
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 4
+nombre de noeuds explorés: 69
+
+
+Solution trouvée en 0.035801 seconde(s).
+
+
+instance 20 1 4
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 4
+nombre de noeuds explorés: 281
+
+
+Solution trouvée en 0.097313 seconde(s).
+
+
+instance 20 1 5
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 9
+nombre de noeuds explorés: 113682
+
+
+Solution trouvée en 40.432592 seconde(s).
+
+
+instance 20 1 6
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 0
+nombre de noeuds explorés: 21
+
+
+Solution trouvée en 0.007079 seconde(s).
+
+
+instance 20 1 7
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 9
+nombre de noeuds explorés: 938
+
+
+Solution trouvée en 0.500812 seconde(s).
+
+
+instance 20 1 8
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 9
+nombre de noeuds explorés: 2213
+
+
+Solution trouvée en 0.978196 seconde(s).
+
+
+instance 20 1 9
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 14
+nombre de noeuds explorés: 27714
+
+
+Solution trouvée en 8.386395 seconde(s).
+
+
+instance 25 1 1
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 22
+nombre de noeuds explorés: 85047
+
+
+Solution trouvée en 139.203667 seconde(s).
+
+
+instance 25 1 2
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 13
+nombre de noeuds explorés: 28780
+
+
+Solution trouvée en 20.736243 seconde(s).
+
+
+instance 25 1 3
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 16
+nombre de noeuds explorés: 198369
+
+
+Solution trouvée en 849.891253 seconde(s).
+
+
+instance 25 1 7
+
+filtrage initial: true
+borne: naive
+methode: ac3
+cout de la solution: 11
+nombre de noeuds explorés: 7566
+
+
+Solution trouvée en 5.041066 seconde(s).
+
+

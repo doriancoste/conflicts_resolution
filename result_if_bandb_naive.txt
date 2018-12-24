@@ -1,0 +1,767 @@
+instance 5 1 0
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+
+Solution trouvée en 0.000042 seconde(s).
+
+
+instance 5 1 1
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+
+Solution trouvée en 0.000040 seconde(s).
+
+
+instance 5 1 2
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+
+Solution trouvée en 0.000078 seconde(s).
+
+
+instance 5 1 3
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+
+Solution trouvée en 0.000893 seconde(s).
+
+
+instance 5 1 4
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+
+Solution trouvée en 0.000048 seconde(s).
+
+
+instance 5 1 5
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+
+Solution trouvée en 0.000038 seconde(s).
+
+
+instance 5 1 6
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+
+Solution trouvée en 0.000038 seconde(s).
+
+
+instance 5 1 7
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+
+Solution trouvée en 0.000038 seconde(s).
+
+
+instance 5 1 8
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+
+Solution trouvée en 0.000037 seconde(s).
+
+
+instance 5 1 9
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 6
+
+
+Solution trouvée en 0.000041 seconde(s).
+
+
+instance 10 1 0
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 11
+
+
+Solution trouvée en 0.000381 seconde(s).
+
+
+instance 10 1 1
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 11
+
+
+Solution trouvée en 0.000171 seconde(s).
+
+
+instance 10 1 2
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 2
+nombre de noeuds explorés: 11
+
+
+Solution trouvée en 0.000311 seconde(s).
+
+
+instance 10 1 3
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 11
+
+
+Solution trouvée en 0.000437 seconde(s).
+
+
+instance 10 1 4
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 2
+nombre de noeuds explorés: 11
+
+
+Solution trouvée en 0.000297 seconde(s).
+
+
+instance 10 1 5
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 31
+
+
+Solution trouvée en 0.002588 seconde(s).
+
+
+instance 10 1 6
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 48
+
+
+Solution trouvée en 0.003826 seconde(s).
+
+
+instance 10 1 7
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 11
+
+
+Solution trouvée en 0.000284 seconde(s).
+
+
+instance 10 1 8
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 11
+
+
+Solution trouvée en 0.000518 seconde(s).
+
+
+instance 10 1 9
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 2
+nombre de noeuds explorés: 11
+
+
+Solution trouvée en 0.000510 seconde(s).
+
+
+instance 15 1 0
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 9
+nombre de noeuds explorés: 5499
+
+
+Solution trouvée en 0.827400 seconde(s).
+
+
+instance 15 1 1
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 207
+
+
+Solution trouvée en 0.016863 seconde(s).
+
+
+instance 15 1 2
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 70
+
+
+Solution trouvée en 0.006757 seconde(s).
+
+
+instance 15 1 3
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 28
+
+
+Solution trouvée en 0.001971 seconde(s).
+
+
+instance 15 1 4
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 80
+
+
+Solution trouvée en 0.007200 seconde(s).
+
+
+instance 15 1 5
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 82
+
+
+Solution trouvée en 0.007850 seconde(s).
+
+
+instance 15 1 6
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 9
+nombre de noeuds explorés: 1963
+
+
+Solution trouvée en 0.283272 seconde(s).
+
+
+instance 15 1 7
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 2
+nombre de noeuds explorés: 16
+
+
+Solution trouvée en 0.000569 seconde(s).
+
+
+instance 15 1 8
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 2
+nombre de noeuds explorés: 16
+
+
+Solution trouvée en 0.000358 seconde(s).
+
+
+instance 15 1 9
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 2
+nombre de noeuds explorés: 17
+
+
+Solution trouvée en 0.000787 seconde(s).
+
+
+instance 15 2 0
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 13
+nombre de noeuds explorés: 35978
+
+
+Solution trouvée en 5.652388 seconde(s).
+
+
+instance 15 2 1
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 7
+nombre de noeuds explorés: 467
+
+
+Solution trouvée en 0.057513 seconde(s).
+
+
+instance 15 2 2
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 7
+nombre de noeuds explorés: 1487
+
+
+Solution trouvée en 0.215491 seconde(s).
+
+
+instance 15 2 3
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 6
+nombre de noeuds explorés: 55
+
+
+Solution trouvée en 0.005517 seconde(s).
+
+
+instance 15 2 4
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 80
+
+
+Solution trouvée en 0.009537 seconde(s).
+
+
+instance 15 2 5
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 7
+nombre de noeuds explorés: 592
+
+
+Solution trouvée en 0.087085 seconde(s).
+
+
+instance 15 2 6
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 12
+nombre de noeuds explorés: 6392
+
+
+Solution trouvée en 0.781857 seconde(s).
+
+
+instance 15 2 7
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 96
+
+
+Solution trouvée en 0.009431 seconde(s).
+
+
+instance 15 2 8
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 6
+nombre de noeuds explorés: 45
+
+
+Solution trouvée en 0.004632 seconde(s).
+
+
+instance 15 2 9
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 50
+
+
+Solution trouvée en 0.004389 seconde(s).
+
+
+instance 15 3 0
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 18
+nombre de noeuds explorés: 239408
+
+
+Solution trouvée en 102.790074 seconde(s).
+
+
+instance 15 3 1
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 12
+nombre de noeuds explorés: 4233
+
+
+Solution trouvée en 0.617025 seconde(s).
+
+
+instance 15 3 2
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 12
+nombre de noeuds explorés: 49345
+
+
+Solution trouvée en 7.387952 seconde(s).
+
+
+instance 15 3 3
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 7
+nombre de noeuds explorés: 107
+
+
+Solution trouvée en 0.010598 seconde(s).
+
+
+instance 15 3 4
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 6
+nombre de noeuds explorés: 239
+
+
+Solution trouvée en 0.022743 seconde(s).
+
+
+instance 15 3 5
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 9
+nombre de noeuds explorés: 1361
+
+
+Solution trouvée en 0.187882 seconde(s).
+
+
+instance 15 3 6
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 18
+nombre de noeuds explorés: 22010
+
+
+Solution trouvée en 3.029281 seconde(s).
+
+
+instance 15 3 7
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 5
+nombre de noeuds explorés: 141
+
+
+Solution trouvée en 0.013024 seconde(s).
+
+
+instance 15 3 8
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 7
+nombre de noeuds explorés: 42
+
+
+Solution trouvée en 0.004922 seconde(s).
+
+
+instance 15 3 9
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 7
+nombre de noeuds explorés: 260
+
+
+Solution trouvée en 0.033952 seconde(s).
+
+
+instance 20 1 0
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 12
+nombre de noeuds explorés: 5694
+
+
+Solution trouvée en 1.268705 seconde(s).
+
+
+instance 20 1 1
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 51
+
+
+Solution trouvée en 0.009246 seconde(s).
+
+
+instance 20 1 2
+instance 20 1 3
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 69
+
+
+Solution trouvée en 0.014904 seconde(s).
+
+
+instance 20 1 4
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 4
+nombre de noeuds explorés: 281
+
+
+Solution trouvée en 0.059848 seconde(s).
+
+
+instance 20 1 5
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 9
+nombre de noeuds explorés: 113682
+
+
+Solution trouvée en 26.136482 seconde(s).
+
+
+instance 20 1 6
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 0
+nombre de noeuds explorés: 21
+
+
+Solution trouvée en 0.002136 seconde(s).
+
+
+instance 20 1 7
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 9
+nombre de noeuds explorés: 938
+
+
+Solution trouvée en 0.192130 seconde(s).
+
+
+instance 20 1 8
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 9
+nombre de noeuds explorés: 2213
+
+
+Solution trouvée en 0.434034 seconde(s).
+
+
+instance 20 1 9
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 14
+nombre de noeuds explorés: 27714
+
+
+Solution trouvée en 4.688891 seconde(s).
+
+
+instance 25 1 0
+
+instance 25 1 1
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 22
+nombre de noeuds explorés: 85047
+
+
+Solution trouvée en 62.696645 seconde(s).
+
+
+instance 25 1 2
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 13
+nombre de noeuds explorés: 28780
+
+
+Solution trouvée en 8.735176 seconde(s).
+
+
+instance 25 1 3
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 16
+nombre de noeuds explorés: 198369
+
+
+Solution trouvée en 447.561103 seconde(s).
+
+
+instance 25 1 4
+
+instance 25 1 6
+
+instance 25 1 7
+
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 11
+nombre de noeuds explorés: 7566
+
+
+Solution trouvée en 2.165224 seconde(s).
+
+
+instance 25 1 8
+
+instance 25 1 9
+
