@@ -734,6 +734,15 @@ Solution trouvée en 8.900689 seconde(s).
 
 instance 25 1 3
 
+filtrage initial: true
+borne: naive
+methode: branch and bound
+cout de la solution: 16
+nombre de noeuds explorés: 198369
+
+
+Solution trouvée en 394.881509 seconde(s).
+
 instance 25 1 7
 
 filtrage initial: true
