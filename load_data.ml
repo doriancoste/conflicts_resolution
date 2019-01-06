@@ -94,17 +94,17 @@ let select_bound = fun bound_name no_conflict nb_planes->
      else
        failwith "unknown bound");;
 
-let select_method = fun method_name ->
-  (* selection de la methode *)
-  if (String.equal method_name "bandb") then
-    (Printf.printf "methode: branch and bound\n";
+let select_filter = fun filter_name ->
+  (* selection de la filtre *)
+  if (String.equal filter_name "naive") then
+    (Printf.printf "filter: naive\n";
      Modele.filter)
   else
-    (if (String.equal method_name "ac3") then
-       (Printf.printf "methode: ac3\n";
+    (if (String.equal filter_name "ac3") then
+       (Printf.printf "filter: ac3\n";
         Modele.filter_ac3)
      else
-       failwith "unknown method");;
+       failwith "unknown filter");;
 
 let init_s = fun init_filter cost nb_planes no_conflict ->
   if init_filter then

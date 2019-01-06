@@ -5,7 +5,7 @@ let () =
   let e = ref 1 in
   let r = ref 0 in
   let bound = ref "naive" in
-  let meth = ref "bandb" in
+  let filt = ref "naive" in
   let init_filter = ref true in
 
   (** fonction pour parametrer les options **)
@@ -13,14 +13,14 @@ let () =
   let set_e = fun nb -> e:=nb in
   let set_r = fun nb -> r:=nb in
   let set_bound = fun bound_name -> bound:=bound_name in
-  let set_method = fun method_name -> meth:=method_name in
+  let set_filter = fun filter_name -> filt:=filter_name in
 
   (** definition des options **)
   let speclist = [("-n", Arg.Int (set_n), "nombre d'avion (defaut:5)");
                   ("-e", Arg.Int (set_e), "nombre d'erreur (defaut:1)");
                   ("-r", Arg.Int (set_r), "graine (defaut:0)");
                   ("-b", Arg.String (set_bound), "borne ('naive'(defaut) ou 'mij')");
-                  ("-m", Arg.String (set_method), "methode ('bandb'(defaut) ou 'ac3')");
+                  ("-f", Arg.String (set_filter), "filtre ('naive'(defaut) ou 'ac3')");
                   ("-if", Arg.Clear init_filter, "desactive le filtre initial (present par defaut)");
                  ] in
   Arg.parse speclist print_endline "Erreur dans le passage des arguments";
@@ -34,9 +34,9 @@ let () =
   (* on creer le sommet de l'arbre *)
   let s=Load_data.init_s !init_filter cost nb_planes no_conflict in
 
-  (* attribution de la borne et de la methode *)
+  (* attribution de la borne et du filtre *)
   let bound = Load_data.select_bound !bound no_conflict nb_planes in
-  let filter = Load_data.select_method !meth in
+  let filter = Load_data.select_filter !filt in
 
   (* Creer la file initiale *)
   let priority = bound s cost in

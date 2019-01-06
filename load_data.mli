@@ -26,7 +26,7 @@ val select_bound : string -> bool array array array array -> int -> (Modele.t ->
    -retour: (Modele.t -> int array -> int) -> fonction correspondant a la borne utilisee
  **)
 
-val select_method : string -> (int -> Modele.t -> bool array array array array -> Modele.t)
+val select_filter : string -> (int -> Modele.t -> bool array array array array -> Modele.t)
 (**
    prend en argument
    -method_name : string -> nom de la methodes
